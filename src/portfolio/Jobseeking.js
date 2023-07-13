@@ -265,6 +265,7 @@ class App extends React.Component {
                         <div className='col-md-auto mb-5 d-none'>
                             <div className="figma text-center">
                                 <iframe
+                                    title="Figma"
                                     style={{ borderRadius: '10px' }}
                                     width="100%"
                                     height="auto"
