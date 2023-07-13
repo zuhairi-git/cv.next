@@ -1,0 +1,10 @@
+node_modules
+public/.DS_Store
+build/.DS_Store
+src/img/.DS_Store
+src/.DS_Store
+src/lib/.DS_Store
+public/css/.DS_Store
+public/lib/.DS_Store
+public/lib/.DS_Store
+.DS_Store
