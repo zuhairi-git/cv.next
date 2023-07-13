@@ -1,0 +1,3 @@
+Failed: Error while executing user command. Exited with error code: 1
+Failed: build command exited with code: 1
+Failed: error occurred while running build command
