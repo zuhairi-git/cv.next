@@ -66,7 +66,7 @@ class App extends React.Component {
                                     <p>Figma, Figma Jam, Maze</p>
                                 </div>
                                 <div>
-                                    <img src={require('../img/collaboration/Platforms.png')} className='w-100 mt-4 border-thin pill-image' alt='Image'></img>
+                                    <img src={require('../img/collaboration/Platforms.png')} className='w-100 mt-4 border-thin pill-image' alt='Platforms'></img>
                                 </div>
                                 <hr className='m-5 border border-lite' />
                             </div>
@@ -122,7 +122,7 @@ class App extends React.Component {
                         <div className='m-lg-5 m-xs-3 m-sm-3'>
                             <hr className='m-5 border border-lite' />
                             <h2 className='primary-title'>Design Process</h2>
-                            <img src={require('../img/jobseeking/DesignProcess.jpg')} className="w-100" alt="cover" />
+                            <img src={require('../img/jobseeking/DesignProcess.jpg')} className="w-100" alt="DesignProcess" />
                         </div>
                         <div className="m-lg-5 m-xs-3 m-sm-3">
                             <p>Double Diamond Design Model</p>
@@ -341,7 +341,7 @@ class App extends React.Component {
                                         <Card.Title className='primary-title'>
                                             <Row>
                                                 <Col className='col-auto'>
-                                                    <img src={require("../img/collaboration/avatars/john.png")} className="avatars" alt='Image' />
+                                                    <img src={require("../img/collaboration/avatars/john.png")} className="avatars" alt='Jone' />
 
                                                 </Col>
                                                 <Col className='col-auto'>
@@ -371,7 +371,7 @@ class App extends React.Component {
                                         <Card.Title className='primary-title'>
                                             <Row>
                                                 <Col className='col-auto'>
-                                                    <img src={require("../img/collaboration/avatars/julia.png")} className="avatars" alt='Image' />
+                                                    <img src={require("../img/collaboration/avatars/julia.png")} className="avatars" alt='Julia' />
 
                                                 </Col>
                                                 <Col className='col-auto'>
@@ -481,7 +481,7 @@ class App extends React.Component {
                             </div>
                             <div className='col-sm-12 col-md-9 mb-lg-5 mb-xs-2 mb-sm-2'>
                                 <p>Inprogress</p>
-                                <img src={require('../img/collaboration/Collaboration-Workflow-UJ.jpg')} className='mt-4 rounded-5 w-100' alt='Image'></img>
+                                <img src={require('../img/collaboration/Collaboration-Workflow-UJ.jpg')} className='mt-4 rounded-5 w-100' alt='Collaboration Workflow UJ'></img>
                             </div>
                         </div>
                     </div>

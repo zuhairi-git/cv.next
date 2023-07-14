@@ -64,7 +64,7 @@ class App extends React.Component {
                         <div className='m-lg-5 m-xs-3 m-sm-3'>
                             <hr className='m-5 border border-lite' />
                             <h2 className='primary-title'>Design Process</h2>
-                            <img src={require("../img/jobseeking/DesignProcess.jpg")} className="w-100" alt="cover" />
+                            <img src={require("../img/jobseeking/DesignProcess.jpg")} className="w-100" alt="DesignProcess" />
                         </div>
                         <div className="m-lg-5 m-xs-3 m-sm-3">
                             <p>Double Diamond Design Model</p>
