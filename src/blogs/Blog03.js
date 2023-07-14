@@ -13,6 +13,7 @@ import TextToSpeech from '../generic/TextToSpeech';
 import SocialMeida from '../generic/SocialMedia';
 
 class App extends React.Component {
+    1358
     state = {
         showAdditionalContent: false,
         showHideButton: false
@@ -48,8 +49,6 @@ class App extends React.Component {
             title: 'Audio Title'
         };
 
-        // Public URL for the MP3 file
-        const mp3Url = 'https://cvlanes.com/audio/blog/blog03.mp3';
         return (
             <div>
                 <TopNavGeneric />
@@ -75,7 +74,7 @@ class App extends React.Component {
                         <div>
                             {/* Render other components or content */}
                             <AudioPlayerMeta
-                                audioFile={require(mp3Url)}
+                                audioFile={require("../audio/blog/blog03.mp3")}
                                 albumCover={require("../img/cvlanes-favicon.png")}
                                 metadata={metadata}
                             />
@@ -121,7 +120,7 @@ class App extends React.Component {
                         <div className='text-center mb-4'>
                             {this.state.showHideButton ? (
                                 <button className="playButtonTimeOver ps-2 pe-2 mt-1 mb-4 text-secondary" onClick={this.toggleHideContent}>
-                                    <i className='fa fa-eye-slash'></i> Hide
+                                     <i className='fa fa-eye-slash'></i> Hide
                                 </button>
                             ) : (
 
