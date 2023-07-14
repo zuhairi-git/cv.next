@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faStop } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,7 +11,7 @@ const BlogReader = ({ contentUrl }) => {
   const [isPlayButtonSelected, setIsPlayButtonSelected] = useState(false);
   const [speech, setSpeech] = useState(null);
 
-  const fetchBlogContent = async () => {
+  const fetchBlogContent = useCallback(async () => {
     try {
       const response = await fetch(contentUrl);
       if (!response.ok) {
@@ -22,7 +22,7 @@ const BlogReader = ({ contentUrl }) => {
     } catch (error) {
       console.error(error);
     }
-  };
+  }, [contentUrl]);
 
   const speak = () => {
     if (!speech) {
@@ -55,12 +55,12 @@ const BlogReader = ({ contentUrl }) => {
     setCurrentTime('00:00');
   };
 
-  const calculateReadingTime = () => {
+  const calculateReadingTime = useCallback(() => {
     const wordsPerMinute = 200; // Average reading speed in words per minute
     const wordCount = blogContent.split(' ').length;
     const minutes = Math.ceil(wordCount / wordsPerMinute);
     setReadingTime(`${minutes} min read`);
-  };
+  }, [blogContent]);
 
   useEffect(() => {
     fetchBlogContent();
@@ -107,7 +107,7 @@ const BlogReader = ({ contentUrl }) => {
 
   useEffect(() => {
     calculateReadingTime();
-  }, [blogContent]);
+  }, [calculateReadingTime]);
 
   return (
     <div>
