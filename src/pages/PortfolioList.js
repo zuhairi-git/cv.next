@@ -9,7 +9,7 @@ const PortfolioPage = ({ id, title, subtitle, to, image, content, classBtn, text
 
     return (
         <div className="card d-flex flex-column">
-            <img src={image} className="card-img-top" alt="portfolio Image" />
+            <img src={image} className="card-img-top" alt={title} />
             <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{title}</h5>
                 <p className="card-text fw-light">{subtitle}</p>

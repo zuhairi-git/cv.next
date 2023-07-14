@@ -566,7 +566,7 @@ class App extends React.Component {
                             </div>
                             <div className='col-sm-12 col-md-9 mb-lg-5 mb-xs-2 mb-sm-2'>
                                 <p><b>Collaboration</b> Plays a <i className='text-decoration-none'> Key</i> Role in Fostering a Seamless <b>Workflow</b>.</p>
-                                <img src={require('../img/collaboration/logo-options.png')} className='mt-4 rounded-5 w-100'></img>
+                                <img src={require('../img/collaboration/logo-options.png')} className='mt-4 rounded-5 w-100' alt='Logo'></img>
                             </div>
                         </div>
                     </div>

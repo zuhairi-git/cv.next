@@ -8,7 +8,7 @@ function ResponsiveNavbar() {
   return (
     <Navbar sticky="top" className='brand-light-color-bg blur' expand="lg">
       <Container>
-        <Navbar.Brand href="/"><img src={logo} style={{ width: '50px' }} alt='Image'/></Navbar.Brand>
+        <Navbar.Brand href="/"><img src={logo} style={{ width: '50px' }} alt='Logo'/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>

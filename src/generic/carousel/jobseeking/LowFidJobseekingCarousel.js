@@ -19,28 +19,28 @@ const LowFidJobseekingCarousel = () => {
 
         <div className="carousel-inner border-bold">
           <div className="carousel-item active">
-            <img alt='Image' src={require("../../../img/jobseeking/low-fid/Splash.jpg")} className="border-hover-primary w-100" />
+            <img alt='Splaxh' src={require("../../../img/jobseeking/low-fid/Splash.jpg")} className="border-hover-primary w-100" />
           </div>
           <div className="carousel-item">
-            <img alt='Image' src={require("../../../img/jobseeking/low-fid/Login.jpg")} className="border-hover-primary w-100" />
+            <img alt='Login' src={require("../../../img/jobseeking/low-fid/Login.jpg")} className="border-hover-primary w-100" />
           </div>
           <div className="carousel-item">
-            <img alt='Image' src={require("../../../img/jobseeking/low-fid/Main.jpg")} className="border-hover-primary w-100" />
+            <img alt='Main' src={require("../../../img/jobseeking/low-fid/Main.jpg")} className="border-hover-primary w-100" />
           </div>
           <div className="carousel-item">
-            <img alt='Image' src={require("../../../img/jobseeking/low-fid/Calendar.jpg")} className="border-hover-primary w-100" />
+            <img alt='Calendar' src={require("../../../img/jobseeking/low-fid/Calendar.jpg")} className="border-hover-primary w-100" />
           </div>
           <div className="carousel-item">
-            <img alt='Image' src={require("../../../img/jobseeking/low-fid/CalendarNext.jpg")} className="border-hover-primary w-100" />
+            <img alt='CalendarNext' src={require("../../../img/jobseeking/low-fid/CalendarNext.jpg")} className="border-hover-primary w-100" />
           </div>
           <div className="carousel-item">
-            <img alt='Image' src={require("../../../img/jobseeking/low-fid/CalendarHistory.jpg")} className="border-hover-primary w-100" />
+            <img alt='CalendarHistory' src={require("../../../img/jobseeking/low-fid/CalendarHistory.jpg")} className="border-hover-primary w-100" />
           </div>
           <div className="carousel-item">
-            <img alt='Image' src={require("../../../img/jobseeking/low-fid/Messeges.jpg")} className="border-hover-primary w-100" />
+            <img alt='Messeges' src={require("../../../img/jobseeking/low-fid/Messeges.jpg")} className="border-hover-primary w-100" />
           </div>
           <div className="carousel-item">
-            <img alt='Image' src={require("../../../img/jobseeking/low-fid/Profile.jpg")} className="border-hover-primary w-100" />
+            <img alt='Profile' src={require("../../../img/jobseeking/low-fid/Profile.jpg")} className="border-hover-primary w-100" />
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carousel00" data-bs-slide="prev">

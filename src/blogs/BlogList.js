@@ -9,7 +9,7 @@ const BlogPage = ({ id, title, to, image, content, style, readMoreText }) => {
   return (
     <>
       <div className="card d-flex flex-column">
-        <img src={image} className="card-img-top" alt="Blog Image" />
+        <img src={image} className="card-img-top" alt={title} />
         <div className="card-body d-flex flex-column">
           <h5 className="card-title" style={style}>{title}</h5>
           <p className="card-text" style={style}>{content}</p>
