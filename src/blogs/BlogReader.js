@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay, faPause, faStop } from '@fortawesome/free-solid-svg-icons';
+import { faPlay, faStop } from '@fortawesome/free-solid-svg-icons';
 
 const BlogReader = ({ contentUrl }) => {
   const [isSpeaking, setIsSpeaking] = useState(false);
@@ -48,13 +48,6 @@ const BlogReader = ({ contentUrl }) => {
     setIsPlayButtonSelected(false);
   };
 
-  const resumeSpeaking = () => {
-    if (isPaused) {
-      window.speechSynthesis.resume();
-      setIsSpeaking(true);
-      setIsPaused(false);
-    }
-  };
 
   const stopSpeaking = () => {
     window.speechSynthesis.cancel();
