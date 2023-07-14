@@ -48,6 +48,8 @@ class App extends React.Component {
             title: 'Audio Title'
         };
 
+        // Public URL for the MP3 file
+        const mp3Url = 'https://cvlanes.com/audio/blog/blog03.mp3';
         return (
             <div>
                 <TopNavGeneric />
