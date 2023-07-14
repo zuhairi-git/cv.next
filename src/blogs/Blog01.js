@@ -3,7 +3,6 @@ import WOW from 'wowjs';
 import TopNavGeneric from '../pages/TopNavGeneric';
 import Footer from '../pages/Footer';
 import BlogAuthor from '../blogs/BlogAuthor';
-import BlogShare from '../blogs/BlogShare';
 import ReadingTimeEstimator from './ReadingTimeEstimator';
 import content from '../text/blog02.txt';
 import BlogList from './BlogList';
@@ -51,7 +50,7 @@ class App extends React.Component {
                         </p>
                         <div className='text-center mb-5 mt-5'>
                             <div className='bg-image'>
-                                <img className='w-100 image-circle' src={require('../img/blog-writing.jpg')} alt='Image' />
+                                <img className='w-100 image-circle' src={require('../img/blog-writing.jpg')} alt='Blog' />
                             </div>
                         </div>
                         <h2>Brainstorming</h2>
@@ -78,7 +77,7 @@ class App extends React.Component {
                         </p>
                         <hr className=' m-lg-5 m-xs-3 m-sm-3' />
                         <div className='text-center  m-lg-5 m-xs-3 m-sm-3'>
-                            <img className='w-100' src={require('../img/circle-daily-rhythm.jpg')} alt='Image' />
+                            <img className='w-100' src={require('../img/circle-daily-rhythm.jpg')} alt='Rhythm' />
                         </div>
 
                         <h2 className='primary-title'>Here's a glimpse into my daily routine</h2>

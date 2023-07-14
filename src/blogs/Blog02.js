@@ -3,7 +3,6 @@ import WOW from 'wowjs';
 import TopNavGeneric from '../pages/TopNavGeneric';
 import Footer from '../pages/Footer';
 import BlogAuthor from './BlogAuthor';
-import BlogShare from './BlogShare';
 import YoutubeShortsEmbed from "../generic/YoutubeShortsEmbed";
 import { TikTok } from "react-tiktok";
 import ReadingTimeEstimator from './ReadingTimeEstimator';
@@ -53,7 +52,7 @@ class App extends React.Component {
                         </p>
                         <div className='text-center mb-5 mt-5'>
                             <div className='bg-image'>
-                                <img className='w-100' src={require('../img/blog/ios-notifications-personal-focus.png')} style={{ maxWidth: '350px', width: '100%' }} alt='Image' />
+                                <img className='w-100' src={require('../img/blog/ios-notifications-personal-focus.png')} style={{ maxWidth: '350px', width: '100%' }} alt='iOS' />
                             </div>
                         </div>
                         <p className='mb-4'>
