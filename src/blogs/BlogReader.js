@@ -48,7 +48,6 @@ const BlogReader = ({ contentUrl }) => {
     setIsPlayButtonSelected(false);
   };
 
-
   const stopSpeaking = () => {
     window.speechSynthesis.cancel();
     setIsSpeaking(false);
@@ -69,7 +68,7 @@ const BlogReader = ({ contentUrl }) => {
     return () => {
       window.speechSynthesis.cancel();
     };
-  }, []);
+  }, [fetchBlogContent]);
 
   useEffect(() => {
     let intervalId;
@@ -116,17 +115,19 @@ const BlogReader = ({ contentUrl }) => {
         <div className="row mb-2">
           {isSpeaking ? (
             <div className="col-auto playButton mb-1 ms-3 me-2" onClick={pauseSpeaking}>
-              <FontAwesomeIcon icon={faPlay} className={isPlayButtonSelected ? "text-info" : ""} />
+              <FontAwesomeIcon icon={faPlay} className={isPlayButtonSelected ? 'text-info' : ''} />
             </div>
           ) : (
             <div className="col-auto playButton mb-1 ms-3 me-2" onClick={speak}>
-              <FontAwesomeIcon icon={faPlay} className={isPlayButtonSelected ? "text-info" : ""} />
+              <FontAwesomeIcon icon={faPlay} className={isPlayButtonSelected ? 'text-info' : ''} />
             </div>
           )}
           <div className="col-auto playButton mb-1 ms-3 me-2" onClick={stopSpeaking}>
             <FontAwesomeIcon icon={faStop} />
           </div>
-          <div className="col-auto playButtonTime mb-1 ms-3 me-2 d-none" id="time">{currentTime}</div>
+          <div className="col-auto playButtonTime mb-1 ms-3 me-2 d-none" id="time">
+            {currentTime}
+          </div>
           <div className="col-auto playButtonTime mb-1 ms-3 me-2">{readingTime}</div>
         </div>
       </div>
