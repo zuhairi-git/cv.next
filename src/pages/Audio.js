@@ -63,7 +63,14 @@ const AudioPlayer = ({ audioFile }) => {
   };
 
   const seekTo = time => {
-    audioRef.current.currentTime = time;
+    const newTime = audioRef.current.currentTime + time;
+    if (newTime >= 0 && newTime <= duration) {
+      audioRef.current.currentTime = newTime;
+    } else if (newTime < 0) {
+      audioRef.current.currentTime = 0;
+    } else if (newTime > duration) {
+      audioRef.current.currentTime = duration;
+    }
   };
 
   const handleBackward = () => {
@@ -103,11 +110,11 @@ const AudioPlayer = ({ audioFile }) => {
           <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={stopAudio}>
             <FaStop />
           </div>
-          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={handleBackward}>
-            <FaBackward />
-          </div>
-          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={handleForward}>
+          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={() => seekTo(5)}>
             <FaForward />
+          </div>
+          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={() => seekTo(-5)}>
+            <FaBackward />
           </div>
           <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={() => changeSpeed(1)}>
             1.0
