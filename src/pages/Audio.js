@@ -63,28 +63,15 @@ const AudioPlayer = ({ audioFile }) => {
   };
 
   const seekTo = time => {
-    const newTime = audioRef.current.currentTime + time;
-    if (newTime >= 0 && newTime <= duration) {
-      audioRef.current.currentTime = newTime;
-    }
+    audioRef.current.currentTime = time;
   };
 
   const handleBackward = () => {
-    const newTime = audioRef.current.currentTime - 5; // Move 5 seconds backward
-    if (newTime >= 0) {
-      audioRef.current.currentTime = newTime;
-    } else {
-      audioRef.current.currentTime = 0;
-    }
+    audioRef.current.currentTime -= 5; // Move 5 seconds backward
   };
 
   const handleForward = () => {
-    const newTime = audioRef.current.currentTime + 5; // Move 5 seconds forward
-    if (newTime <= duration) {
-      audioRef.current.currentTime = newTime;
-    } else {
-      audioRef.current.currentTime = duration;
-    }
+    audioRef.current.currentTime += 5; // Move 5 seconds forward
   };
 
   const formatTime = time => {
@@ -107,11 +94,11 @@ const AudioPlayer = ({ audioFile }) => {
           <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={stopAudio}>
             <FaStop />
           </div>
-          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={() => seekTo(5)}>
-            <FaForward />
-          </div>
-          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={() => seekTo(-5)}>
+          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={handleBackward}>
             <FaBackward />
+          </div>
+          <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={handleForward}>
+            <FaForward />
           </div>
           <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3" onClick={() => changeSpeed(1)}>
             1.0
