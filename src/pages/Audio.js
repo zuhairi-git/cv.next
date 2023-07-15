@@ -66,10 +66,6 @@ const AudioPlayer = ({ audioFile }) => {
     const newTime = audioRef.current.currentTime + time;
     if (newTime >= 0 && newTime <= duration) {
       audioRef.current.currentTime = newTime;
-    } else if (newTime < 0) {
-      audioRef.current.currentTime = 0;
-    } else if (newTime > duration) {
-      audioRef.current.currentTime = duration;
     }
   };
 
