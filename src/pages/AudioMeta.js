@@ -3,7 +3,7 @@ import { FaPlay, FaPause, FaStop, FaBackward, FaForward } from 'react-icons/fa';
 
 const AudioPlayerMeta = ({ audioFile, albumCover, metadata }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [setSpeed] = useState(1);
+  const [speed, setSpeed] = useState(1);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
 
@@ -60,6 +60,10 @@ const AudioPlayerMeta = ({ audioFile, albumCover, metadata }) => {
   const changeSpeed = newSpeed => {
     audioRef.current.playbackRate = newSpeed;
     setSpeed(newSpeed);
+  };
+
+  const seekTo = time => {
+    audioRef.current.currentTime = time;
   };
 
   const handleBackward = () => {
