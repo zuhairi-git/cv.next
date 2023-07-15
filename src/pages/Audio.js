@@ -67,13 +67,22 @@ const AudioPlayer = ({ audioFile }) => {
   };
 
   const handleBackward = () => {
-    audioRef.current.currentTime -= 5; // Move 5 seconds backward
+    const newTime = audioRef.current.currentTime - 5; // Move 5 seconds backward
+    if (newTime >= 0) {
+      audioRef.current.currentTime = newTime;
+    } else {
+      audioRef.current.currentTime = 0;
+    }
   };
 
   const handleForward = () => {
-    audioRef.current.currentTime += 5; // Move 5 seconds forward
+    const newTime = audioRef.current.currentTime + 5; // Move 5 seconds forward
+    if (newTime < duration) {
+      audioRef.current.currentTime = newTime;
+    } else {
+      audioRef.current.currentTime = duration;
+    }
   };
-
   const formatTime = time => {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
