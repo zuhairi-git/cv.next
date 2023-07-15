@@ -140,7 +140,6 @@ class App extends React.Component {
                                 <p>
                                     One of the primary drivers behind this belief is the limitations inherent in the human condition. Despite our remarkable achievements, humans are constrained by biological factors, including our cognitive capacities, lifespan, and susceptibility to errors. In contrast, AI systems have the potential to transcend these limitations, offering the ability to process and analyze vast amounts of information rapidly, make unbiased decisions, and continuously improve without succumbing to fatigue or emotional biases.
                                 </p>
-                                <h4></h4>
                                 <h4>A Synergistic Future:</h4>
                                 <p>
                                     Rather than envisioning a dystopian future where humans are rendered obsolete, it is essential to emphasize the potential for a harmonious coexistence between humans and AI. As AI advances, it can become an invaluable tool to augment human intelligence and creativity. By leveraging the unique strengths of both humans and machines, we can solve complex problems, explore new frontiers of knowledge, and unlock unimagined possibilities.
