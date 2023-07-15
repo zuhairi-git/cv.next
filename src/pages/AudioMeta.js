@@ -67,13 +67,13 @@ const AudioPlayerMeta = ({ audioFile, albumCover, metadata }) => {
   };
 
   const handleBackward = () => {
-    audioRef.current.currentTime -= 5; // Move 5 seconds backward
+    seekTo(audioRef.current.currentTime - 5); // Move 5 seconds backward
   };
-
+  
   const handleForward = () => {
-    audioRef.current.currentTime += 5; // Move 5 seconds forward
+    seekTo(audioRef.current.currentTime + 5); // Move 5 seconds forward
   };
-
+  
   const formatTime = time => {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
@@ -144,6 +144,11 @@ const AudioPlayerMeta = ({ audioFile, albumCover, metadata }) => {
           </div>
         </div>
       </div>
+
+      <div className="col-md-auto col-sm-4 playButton ms-2 me-2 mt-3 d-none" onClick={() => changeSpeed(speed)}>
+        {speed}
+      </div>
+
     </div>
   );
 };
