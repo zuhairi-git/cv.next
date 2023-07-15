@@ -84,12 +84,13 @@ const AudioPlayer = ({ audioFile }) => {
 
   const handleForward = () => {
     const newTime = audioRef.current.currentTime + 5; // Move 5 seconds forward
-    if (newTime < duration) {
+    if (newTime <= duration) {
       audioRef.current.currentTime = newTime;
     } else {
       audioRef.current.currentTime = duration;
     }
   };
+
   const formatTime = time => {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
