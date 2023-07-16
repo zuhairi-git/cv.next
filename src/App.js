@@ -31,7 +31,7 @@ function App() {
           title: "Portfolio",
           description: "Where Magic Happens",
           ogType: "Page",
-          ogImage: "/img/portfolio-cover-dark.jpeg",
+          ogImage: "/img/portfolio-cover-darker.jpg",
           ogImageWidth: "1200",
           ogImageHeight: "630",
           imageAlt: "Portfolio",
