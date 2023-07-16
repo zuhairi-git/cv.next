@@ -9,8 +9,8 @@ import Blog from "./pages/Blog";
 import Blog01 from "./blogs/Blog01";
 import Blog02 from "./blogs/Blog02";
 import Blog03 from "./blogs/Blog03";
-import ogLanding from './images/ali.png';
-import ogPortfolio from './images/portfolio-cover-dark.jpeg';
+import ogLanding from './img/ali.png';
+import ogPortfolio from './img/portfolio-cover-dark.jpeg';
 
 function App() {
   const location = useLocation();
