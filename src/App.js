@@ -105,7 +105,12 @@ function App() {
 
       default:
         return {
+          title: "Default Page",
+          description: "Default Page Description",
+          ogType: "website",
           ogImage: `${publicUrl}/img/covers/${location.pathname}-default-image.jpg`,
+          ogImageWidth: "1200",
+          ogImageHeight: "630",
         };
     }
   };
