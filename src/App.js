@@ -103,9 +103,10 @@ function App() {
           imageAlt: "Era of AI",
         };
 
-
       default:
-        return {};
+        return {
+          ogImage: `${publicUrl}/img/covers/${location.pathname}-default-image.jpg`,
+        };
     }
   };
 
