@@ -16,6 +16,11 @@ function App() {
   const getMetaTags = () => {
     const publicUrl = process.env.PUBLIC_URL;
 
+    const getPageName = (pathname) => {
+      const parts = pathname.split("/").filter(Boolean);
+      return parts[parts.length - 1];
+    };
+
     switch (location.pathname) {
       case "/":
         return {
@@ -108,7 +113,9 @@ function App() {
           title: "Default Page",
           description: "Default Page Description",
           ogType: "website",
-          ogImage: `${publicUrl}/img/covers/${location.pathname}-default-image.jpg`,
+          ogImage: `${publicUrl}/img/covers/${getPageName(
+            location.pathname
+          )}-default-image.jpg`,
           ogImageWidth: "1200",
           ogImageHeight: "630",
         };
