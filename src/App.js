@@ -24,7 +24,7 @@ function App() {
           ogImageWidth: "1200",
           ogImageHeight: "630",
           twitterCreator: "Ali Zuhairi",
-          twitterCard: "summary",
+          twitterCard: "My CV and Skills",
         };
       case "/portfolio":
         return {
