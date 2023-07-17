@@ -112,12 +112,11 @@ function App() {
 
       default:
         return {
-          title: "Default Page",
-          description: "Default Page Description",
-          ogType: "website",
-          ogImage: `${publicUrl}/img/covers/${getPageName(
-            location.pathname
-          )}-default-image.jpg`,
+          title: "CV Lanes | Landing Page",
+          description: "Professional Product Designer",
+          ogTitle: "CV Lanes | Landing Page",
+          ogDescription: "Professional Product Designer",
+          ogImage: `${publicUrl}/img/covers/blogs-premitive-human-default-image.jpg`,
           ogImageWidth: "1200",
           ogImageHeight: "630",
         };
