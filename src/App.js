@@ -115,7 +115,9 @@ function App() {
           title: "Default Page",
           description: "Default Page Description",
           ogType: "website",
-          ogImage: `${publicUrl}/img/covers/default-image.jpg`,
+          ogImage: `${publicUrl}/img/covers/${getPageName(
+            location.pathname
+          )}-default-image.jpg`,
           ogImageWidth: "1200",
           ogImageHeight: "630",
         };
