@@ -26,6 +26,8 @@ function App() {
         return {
           title: "CV Lanes | Landing Page",
           description: "Professional Product Designer",
+          ogTitle: "CV Lanes | Landing Page",
+          ogDescription: "Professional Product Designer",
           ogType: "website",
           ogImage: `${publicUrl}/img/covers/default-image.jpg`,
           ogImageWidth: "1200",
@@ -113,9 +115,7 @@ function App() {
           title: "Default Page",
           description: "Default Page Description",
           ogType: "website",
-          ogImage: `${publicUrl}/img/covers/${getPageName(
-            location.pathname
-          )}-default-image.jpg`,
+          ogImage: `${publicUrl}/img/covers/default-image.jpg`,
           ogImageWidth: "1200",
           ogImageHeight: "630",
         };
