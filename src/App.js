@@ -16,6 +16,11 @@ function App() {
   const getMetaTags = () => {
     const publicUrl = process.env.PUBLIC_URL;
 
+    const getPageName = (pathname) => {
+      const parts = pathname.split("/").filter(Boolean);
+      return parts[parts.length - 1];
+    };
+
     switch (location.pathname) {
       case "/":
         return {
@@ -24,7 +29,7 @@ function App() {
           ogTitle: "CV Lanes | Landing Page",
           ogDescription: "Professional Product Designer",
           ogType: "website",
-          ogImage: 'https://next.cvlanes.com/static/media/smart-shopping-cover.55d19e801c8d8f6eef7e.jpg',
+          ogImage: `${publicUrl}/img/covers/default-image.jpg`,
           ogImageWidth: "1200",
           ogImageHeight: "630",
           twitterCreator: "Ali Zuhairi",
@@ -111,7 +116,9 @@ function App() {
           description: "Professional Product Designer",
           ogTitle: "CV Lanes | Landing Page",
           ogDescription: "Professional Product Designer",
-          ogImage: 'https://next.cvlanes.com/static/media/smart-shopping-cover.55d19e801c8d8f6eef7e.jpg',
+          ogImage: `${publicUrl}/img/covers/${getPageName(
+            location.pathname
+          )}-default-image.jpg`,
           ogImageWidth: "1200",
           ogImageHeight: "630",
         };
