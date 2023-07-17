@@ -14,13 +14,15 @@ function App() {
   const location = useLocation();
 
   const getMetaTags = () => {
+    const publicUrl = process.env.PUBLIC_URL;
+
     switch (location.pathname) {
       case "/":
         return {
           title: "CV Lanes | Landing Page",
           description: "Professional Product Designer",
           ogType: "website",
-          ogImage: "./img/covers/ali.png",
+          ogImage: "${publicUrl}/img/covers/ali.png",
           ogImageWidth: "1200",
           ogImageHeight: "630",
           twitterCreator: "Ali Zuhairi",
@@ -31,7 +33,7 @@ function App() {
           title: "Portfolio",
           description: "Where Magic Happens",
           ogType: "Page",
-          ogImage: "./img/covers/portfolio-cover-darker.jpg",
+          ogImage: "${publicUrl}/img/covers/portfolio-cover-darker.jpg",
           ogImageWidth: "1200",
           ogImageHeight: "630",
           imageAlt: "Portfolio",
@@ -41,7 +43,7 @@ function App() {
           title: "Blog",
           description: "To Blog... or not to Blog",
           ogType: "Page",
-          ogImage: "%PUBLIC_URL%/img/covers/blog-cover.jpeg",
+          ogImage: "${publicUrl}/img/covers/blog-cover.jpeg",
           ogImageWidth: "1200",
           ogImageHeight: "630",
           imageAlt: "Blog",
@@ -51,7 +53,7 @@ function App() {
           title: "Job Seeking Application",
           description: "Job Seeking Application",
           ogType: "Portfolio",
-          ogImage: "%PUBLIC_URL%/img/covers/jobseeking-cover.jpeg",
+          ogImage: "${publicUrl}/img/covers/jobseeking-cover.jpeg",
           ogImageWidth: "1200",
           ogImageHeight: "630",
           imageAlt: "Job Seeking Application",
@@ -62,7 +64,7 @@ function App() {
           title: "Collaboration Workflow Platform",
           description: "Collaboration Workflow Platform",
           ogType: "Portfolio",
-          ogImage: "%PUBLIC_URL%/img/covers/cwp.png",
+          ogImage: "${publicUrl}/img/covers/cwp.png",
           ogImageWidth: "1200",
           ogImageHeight: "630",
           imageAlt: "Collaboration Workflow Platform",
@@ -73,7 +75,7 @@ function App() {
           title: "Daily Rhythm",
           description: "Circle of Daily Rhythm",
           ogType: "article",
-          ogImage: "%PUBLIC_URL%/img/covers/circle-daily-rhythm.jpg",
+          ogImage: "${publicUrl}/img/covers/circle-daily-rhythm.jpg",
           ogImageWidth: "1200",
           ogImageHeight: "630",
           imageAlt: "Daily Rhythm",
@@ -84,7 +86,7 @@ function App() {
           title: "Notifications on iOS",
           description: "How to get notifications on iOS with personal focus on?",
           ogType: "article",
-          ogImage: "%PUBLIC_URL%/img/covers/iphone-mail-notifications.jpg",
+          ogImage: "${publicUrl}/img/covers/iphone-mail-notifications.jpg",
           ogImageWidth: "1200",
           ogImageHeight: "630",
           imageAlt: "Notifications on iOS",
@@ -95,7 +97,7 @@ function App() {
           title: "Embracing the Era of AI",
           description: "Humanity's Journey to Unparalleled Sophistication",
           ogType: "article",
-          ogImage: "%PUBLIC_URL%/img/covers/Human-AI/human-AI-jpg",
+          ogImage: "${publicUrl}/img/covers/Human-AI/human-AI-jpg",
           ogImageWidth: "1200",
           ogImageHeight: "630",
           imageAlt: "Era of AI",
