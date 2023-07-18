@@ -26,8 +26,8 @@ function App() {
         return {
           title: "CV Lanes | Landing Page",
           description: "Professional Product Designer",
-          ogTitle: "CV Lanes | Landing Page",
-          ogDescription: "Professional Product Designer",
+          ogTitle: "CV Lanes | Webpage",
+          ogDescription: "Professional Product/UI/UX Designer",
           ogType: "website",
           ogImage: 'https://centerux.com/images/sites/corescene.png',
           ogImageWidth: "1200",
