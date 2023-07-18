@@ -29,7 +29,7 @@ function App() {
           ogTitle: "CV Lanes | Landing Page",
           ogDescription: "Professional Product Designer",
           ogType: "website",
-          ogImage: `${publicUrl}/img/covers/default-image.jpg`,
+          ogImage: 'https://centerux.com/images/sites/corescene.png',
           ogImageWidth: "1200",
           ogImageHeight: "630",
           twitterCreator: "Ali Zuhairi",
@@ -141,6 +141,10 @@ function App() {
             <meta property="og:image" content={metaTags.ogImage} />
             <meta property="og:image:width" content={metaTags.ogImageWidth} />
             <meta property="og:image:height" content={metaTags.ogImageHeight} />
+            <meta name="twitter:title" content={metaTags.title} />
+            <meta name="twitter:description" content={metaTags.description} />
+            <meta name="twitter:image" content={metaTags.ogImage} />
+            <meta name="twitter:card" content={metaTags.ogImage} />
           </>
         )}
         {metaTags.imageAlt && (
