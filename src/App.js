@@ -24,10 +24,10 @@ function App() {
     switch (location.pathname) {
       case "/":
         return {
-          title: "CV Lanes | Landing Page",
-          description: "Professional Product Designer",
-          ogTitle: "CV Lanes | Webpage",
-          ogDescription: "Professional Product/UI/UX Designer",
+          title: "CV Lanes | Webpage",
+          description: "Professional Product/UI/UX Designer",
+          ogTitle: "CV Lanes | Landing Page",
+          ogDescription: "Professional Product Designer",
           ogType: "website",
           ogImage: 'https://centerux.com/images/sites/corescene.png',
           ogImageWidth: "1200",
