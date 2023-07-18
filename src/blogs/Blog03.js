@@ -268,7 +268,7 @@ class App extends React.Component {
                             <Row>
                                 <Col>
                                     <h3 className="text-center mt-5">More Posts</h3>
-                                    <div class="titleUnderLine mb-4"></div>
+                                    <div className="titleUnderLine mb-4"></div>
                                 </Col>
                             </Row>
                             <BlogList idsToShow={[1, 2]} style={{ fontSize: '60%' }} />

@@ -114,16 +114,16 @@ class App extends React.Component {
 
                 <div className='separator'></div>
                 <div className='custom-bg'>
-                    <div class="custom-shape-divider-top-1688373964">
+                    <div className="custom-shape-divider-top-1688373964">
                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                            <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+                            <path d="M1200 0L0 0 892.25 114.72 1200 0z" className="shape-fill"></path>
                         </svg>
                     </div>
 
                     <WorkAchievements />
-                    <div class="custom-shape-divider-bottom-1688374069">
+                    <div className="custom-shape-divider-bottom-1688374069">
                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                            <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+                            <path d="M1200 0L0 0 892.25 114.72 1200 0z" className="shape-fill"></path>
                         </svg>
                     </div>
                 </div>
@@ -146,14 +146,14 @@ class App extends React.Component {
                                             <h4 style={{ marginBottom: '0', lineHeight: '20px' }}>Creative Problem-Solving, Divergent Thinking, Thoughtful Disruption & Exploring New Perspectives</h4>
                                         </div>
                                         <div className="team-social pb-1">
-                                            <a className="btn button-primary" href="https://twitter.com/AliZohairi"><i class="fa-brands fa-twitter"></i></a>
-                                            <a className="btn button-primary" href="https://www.linkedin.com/in/ali-zuhairi/"><i class="fa-brands fa-linkedin-in"></i></a>
-                                            <a className="btn button-primary" href="https://www.facebook.com/zuhairi.one"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a className="btn button-primary" href="https://twitter.com/AliZohairi"><i className="fa-brands fa-twitter"></i></a>
+                                            <a className="btn button-primary" href="https://www.linkedin.com/in/ali-zuhairi/"><i className="fa-brands fa-linkedin-in"></i></a>
+                                            <a className="btn button-primary" href="https://www.facebook.com/zuhairi.one"><i className="fa-brands fa-facebook-f"></i></a>
                                         </div>
                                         <div className="team-social">
-                                            <a className="btn button-primary" href="https://www.tiktok.com/@zuhairi.ali"><i class="fa-brands fa-tiktok"></i></a>
-                                            <a className="btn button-primary" href="https://www.youtube.com/@Ali.Zuhairi"><i class="fa-brands fa-youtube"></i></a>
-                                            <a className="btn button-primary" href="mailto:zohairi@live.com"><i class="fa-solid fa-envelope"></i></a>
+                                            <a className="btn button-primary" href="https://www.tiktok.com/@zuhairi.ali"><i className="fa-brands fa-tiktok"></i></a>
+                                            <a className="btn button-primary" href="https://www.youtube.com/@Ali.Zuhairi"><i className="fa-brands fa-youtube"></i></a>
+                                            <a className="btn button-primary" href="mailto:zohairi@live.com"><i className="fa-solid fa-envelope"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -185,8 +185,8 @@ class App extends React.Component {
                                             <a className="btn button-primary buttonIconBrands" href="https://twitter.com/AliZohairi"><i className="fab fa-twitter"></i></a>
                                             <a className="btn button-primary buttonIconBrands" href="https://www.linkedin.com/in/ali-zuhairi/"><i className="fab fa-linkedin-in"></i></a>
                                             <a className="btn button-primary buttonIconBrands" href="https://www.facebook.com/zuhairi.one"><i className="fab fa-facebook-f"></i></a>
-                                            <a className="btn button-primary buttonIconBrands" href="https://www.tiktok.com/@zuhairi.ali"><i class="fa-brands fa-tiktok"></i></a>
-                                            <a className="btn button-primary buttonIconBrands" href="https://www.youtube.com/@Ali.Zuhairi"><i class="fa-brands fa-youtube"></i></a>
+                                            <a className="btn button-primary buttonIconBrands" href="https://www.tiktok.com/@zuhairi.ali"><i className="fa-brands fa-tiktok"></i></a>
+                                            <a className="btn button-primary buttonIconBrands" href="https://www.youtube.com/@Ali.Zuhairi"><i className="fa-brands fa-youtube"></i></a>
                                             <a className="btn button-primary buttonIconBrands" href="mailto:zohairi@live.com"><i className="fa fa-envelope"></i></a>
                                         </div>
                                     </div>

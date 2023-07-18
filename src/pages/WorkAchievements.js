@@ -66,7 +66,7 @@ const AchievementCard = ({ achievement }) => {
       />
       <div className="card-body flex-grow-1">
         <h5 className='text-center'>{achievement.title}</h5>
-        <div class="titleUnderLineBrand mb-4"></div>
+        <div className="titleUnderLineBrand mb-4"></div>
         <p className="card-text">{achievement.text}</p>
       </div>
     </div>

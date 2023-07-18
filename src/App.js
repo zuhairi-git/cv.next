@@ -12,6 +12,7 @@ import Blog03 from "./blogs/Blog03";
 
 function App() {
   const location = useLocation();
+  const { HelmetProvider, Helmet } = require("react-helmet-async");
 
   const getMetaTags = () => {
     const publicUrl = process.env.PUBLIC_URL;
@@ -126,6 +127,8 @@ function App() {
   };
 
   const metaTags = getMetaTags();
+
+  console.log(metaTags); // Add this line to log the metaTags object
 
   return (
     <HelmetProvider>
