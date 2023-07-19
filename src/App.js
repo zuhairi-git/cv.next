@@ -1,8 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { HelmetProvider, Helmet } from "react-helmet-async";
-import { createRoot } from 'react-dom';
-import { Helmet as ReactHelmetAsync } from 'react-helmet-async';
-
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Jobseeking from "./portfolio/Jobseeking";
@@ -154,7 +151,6 @@ function App() {
         )}
         {/* Add other meta tags based on the metaTags object */}
       </Helmet>
-
 
       <Routes>
         <Route path="/" element={<Home />} />

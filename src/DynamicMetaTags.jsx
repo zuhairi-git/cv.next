@@ -2,7 +2,7 @@ import React from 'react';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 const DynamicMetaTags = () => {
-  const metaTags = window.dynamicMetaTags ?? {};
+  const metaTags = window.dynamicMetaTags || {};
 
   return (
     <HelmetProvider>
