@@ -31,7 +31,7 @@ const BlogPage = () => {
                         <h1 className="text-center my-5 primary-title display-2">My Blog</h1>
                     </Col>
                 </Row>
-                <BlogList idsToShow={[4, 3, 2, 1]} />
+                <BlogList idsToShow={[5, 4, 3, 2, 1]} />
             </Container>
             <BackToTopButton />
             <Footer />
