@@ -166,7 +166,7 @@ class App extends React.Component {
                                     <div className="titleUnderLine mb-4"></div>
                                 </Col>
                             </Row>
-                            <BlogList idsToShow={[1, 2]} style={{ fontSize: '60%' }} />
+                            <BlogList idsToShow={[1, 2, 3]} style={{ fontSize: '60%' }} />
                         </Container>
                     </div>
 
