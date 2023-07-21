@@ -12,7 +12,7 @@ import Blog04 from "./blogs/Blog04";
 import ReactGA from 'react-ga';
 import withTracker from './generic/withTracker';
 
-ReactGA.initialize('G-SG6G1Z4FPR');
+ReactGA.initialize('G-QR6LZ8YSLJ');
 
 function App() {
   const location = useLocation();
