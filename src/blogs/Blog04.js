@@ -68,11 +68,10 @@ class App extends React.Component {
                         </div>
                         <section>
                             <div className='text-center'>
-                                <h3 className='mt-5'>Introducing Claude.ai</h3>
+                                <h3 className='mt-5'>Claude.ai</h3>
                                 <div className='titleUnderLine mb-4'></div>
                             </div>
                             <p>
-                                Introducing Claude.ai
                                 Claude.ai is an AI assistant developed by Anthropic with a primary focus on being helpful, honest, and harmless. It possesses several key capabilities that make it stand out:
                                 <ol>
                                     <li>Natural Language Processing: Claude excels at comprehending and responding to complex natural language requests and queries.</li>
