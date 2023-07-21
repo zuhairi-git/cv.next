@@ -47,8 +47,6 @@ class App extends React.Component {
             artist: 'Artist Name',
             title: 'Audio Title'
         };
-        // Public URL for the MP3 file
-        const mp3Url = 'https://cvlanes.com/audio/blog/blog03.mp3';
 
         return (
             <div>
@@ -75,7 +73,7 @@ class App extends React.Component {
                         <div>
                             {/* Render other components or content */}
                             <AudioPlayerMeta
-                                audioFile={mp3Url}
+                                audioFile={require("../audio/blog/blog03.mp3")}
                                 albumCover={require("../img/cvlanes-favicon.png")}
                                 metadata={metadata}
                             />
@@ -105,7 +103,7 @@ class App extends React.Component {
                         </p>
                         <div className='text-center mb-5 mt-5'>
                             <div className='bg-image'>
-                                <img className='w-100' src={require('../img/blog/Human-AI/itsmeai.webp')} style={{ width: '100%' }} alt='Its Me' />
+                                <img className='w-100' src={require('../img/blog/Human-AI/itsmeai.webp')} style={{ width: '100%' }} alt='AI' />
                             </div>
                         </div>
 
@@ -142,7 +140,6 @@ class App extends React.Component {
                                 <p>
                                     One of the primary drivers behind this belief is the limitations inherent in the human condition. Despite our remarkable achievements, humans are constrained by biological factors, including our cognitive capacities, lifespan, and susceptibility to errors. In contrast, AI systems have the potential to transcend these limitations, offering the ability to process and analyze vast amounts of information rapidly, make unbiased decisions, and continuously improve without succumbing to fatigue or emotional biases.
                                 </p>
-                                <h4></h4>
                                 <h4>A Synergistic Future:</h4>
                                 <p>
                                     Rather than envisioning a dystopian future where humans are rendered obsolete, it is essential to emphasize the potential for a harmonious coexistence between humans and AI. As AI advances, it can become an invaluable tool to augment human intelligence and creativity. By leveraging the unique strengths of both humans and machines, we can solve complex problems, explore new frontiers of knowledge, and unlock unimagined possibilities.
@@ -174,7 +171,7 @@ class App extends React.Component {
                         </p>
                         <div className='text-center mb-5 mt-5'>
                             <div className='bg-image'>
-                                <img className='w-100' src={require('../img/blog/Human-AI/aivshuman.webp')} style={{ width: '100%' }} alt='AI Human' />
+                                <img className='w-100' src={require('../img/blog/Human-AI/aivshuman.webp')} style={{ width: '100%' }} alt='Human' />
                             </div>
                         </div>
                         <p>
