@@ -39,7 +39,7 @@ const BlogList = ({ idsToShow, style }) => {
     {
       id: 4,
       title: "Claude.ai or Chat GPT: How to access Claude.ai?",
-      to: '',
+      to: '/blogs/claude-ai',
       image: require('../img/blog/Human-AI/ai04.jpg'),
       content: 'The increasing accessibility of AI assistance makes it clear that not utilizing such technology can make tasks more challenging. It begs the question, where do we draw the line?',
       hidden: false,
