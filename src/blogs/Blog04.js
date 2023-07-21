@@ -61,8 +61,7 @@ class App extends React.Component {
 
                         <div className='quoteContainer mb-5'>
                             <q className='mb-4'>
-                                I have a feeling that with the progress of AI and the advancements in machine learning, our world will reach such a level of sophistication that most humans may appear <span className='quoteHighlight'>primitive once more.</span>
-                            </q>
+                                The increasing accessibility of AI assistance makes it clear that not utilizing such technology can make tasks more challenging. It begs the question, where do we draw the line?                            </q>
                             <p className='quoteLine'>
                                 Ali
                             </p>
@@ -110,15 +109,20 @@ class App extends React.Component {
                                     <li>Once the VPN is active, visit Claude.ai, and you should be able to access the website as if you were located in the United States.</li>
                                 </ol>
                             </p>
+                            <div className='text-center'>
+                                <h3 className='mt-5'>How to Video</h3>
+                                <div className='titleUnderLine mb-4'></div>
+                            </div>
+
                             <p>
                                 Check out this video I've prepared demonstrating how to activate the VPN on Opera browser for iOS 17 beta:
                             </p>
                             <div className='text-center'>
-                                <a className='btn m-3'>
-                                    Tiktok
+                                <a className='btn m-3' href='https://www.tiktok.com/@zuhairi.ali/video/7258208078036831515?is_from_webapp=1&sender_device=pc&web_id=7248712097068402202'>
+                                    <i className="fa-brands fa-tiktok me-2"></i>Tiktok
                                 </a>
-                                <a className='btn m-3'>
-                                    Youtube
+                                <a className='btn m-3' href='https://youtu.be/JubmkuTU0Wo'>
+                                    <i className="fa-brands fa-youtube me-2"></i>Youtube
                                 </a>
                             </div>
                             <div className='text-center mb-5 mt-5'>
@@ -138,7 +142,7 @@ class App extends React.Component {
                             </p>
                             <div className='text-center'>
                                 <q>
-                                    <span className='quoteHighlight'>When was the most recent update of information for the platfomr?</span>
+                                    <span className='quoteHighlight'>When was the most recent update of information for the platform?</span>
                                 </q>
                             </div>
 
