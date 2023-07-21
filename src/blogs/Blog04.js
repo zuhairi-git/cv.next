@@ -113,6 +113,14 @@ class App extends React.Component {
                             <p>
                                 Check out this video I've prepared demonstrating how to activate the VPN on Opera browser for iOS 17 beta:
                             </p>
+                            <div className='text-center'>
+                                <a className='btn m-3'>
+                                    Tiktok
+                                </a>
+                                <a className='btn m-3'>
+                                    Youtube
+                                </a>
+                            </div>
                             <div className='text-center mb-5 mt-5'>
                                 <div className='bg-image'>
                                 </div>
@@ -128,12 +136,22 @@ class App extends React.Component {
                                 Based on personal experiences with both, Chat GPT appears to be more reliable and exhibits higher intelligence compared to Claude. However, Claude.ai shines when it comes to providing up-to-date and concise responses. Notably, when dealing with lengthy text, Claude conveniently transforms it into a text file, saving space and making interactions smoother. Ultimately, your choice may depend on your specific needs and preferences.
                                 Compare responses from both for the question I asked:
                             </p>
+                            <div className='text-center'>
+                                <q>
+                                    <span className='quoteHighlight'>When was the most recent update of information for the platfomr?</span>
+                                </q>
+                            </div>
 
                             <div className='text-center mb-5 mt-5'>
                                 <div className='bg-image'>
                                     <img className='w-100 shadow-lg p-3 mb-5 bg-white rounded' src={require('../img/blog/claudevschatgpt.jpg')} style={{ width: '100%' }} alt='AI' />
                                 </div>
                             </div>
+                            <p>
+                                I hope that you found this information beneficial, and it has enabled you to explore and experience another AI assistant to assist you further. Should you have any more questions or require assistance, feel free to reach out. Happy exploring!
+                            </p>
+
+
                         </section>
 
                         <SocialMeida />
