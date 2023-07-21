@@ -9,6 +9,10 @@ import Blog01 from "./blogs/Blog01";
 import Blog02 from "./blogs/Blog02";
 import Blog03 from "./blogs/Blog03";
 import Blog04 from "./blogs/Blog04";
+import ReactGA from 'react-ga';
+import withTracker from './generic/withTracker';
+
+ReactGA.initialize('G-SG6G1Z4FPR');
 
 function App() {
   const location = useLocation();
@@ -154,16 +158,17 @@ function App() {
       </Helmet>
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/portfolio/jobseeking" element={<Jobseeking />} />
-        <Route path="/portfolio/collaboration" element={<Collaboration />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blogs/circle-of-rhythm" element={<Blog01 />} />
-        <Route path="/blogs/ios-notifications" element={<Blog02 />} />
-        <Route path="/blogs/premitive-human" element={<Blog03 />} />
-        <Route path="/blogs/claude-ai" element={<Blog04 />} />
+        <Route path="/" element={withTracker(Home)} />
+        <Route path="/portfolio" element={withTracker(Portfolio)} />
+        <Route path="/portfolio/jobseeking" element={withTracker(Jobseeking)} />
+        <Route path="/portfolio/collaboration" element={withTracker(Collaboration)} />
+        <Route path="/blog" element={withTracker(Blog)} />
+        <Route path="/blogs/circle-of-rhythm" element={withTracker(Blog01)} />
+        <Route path="/blogs/ios-notifications" element={withTracker(Blog02)} />
+        <Route path="/blogs/premitive-human" element={withTracker(Blog03)} />
+        <Route path="/blogs/claude-ai" element={withTracker(Blog04)} />
       </Routes>
+
     </HelmetProvider>
   );
 }
