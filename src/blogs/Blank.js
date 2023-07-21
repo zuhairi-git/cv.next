@@ -4,8 +4,10 @@ import TopNavGeneric from '../pages/TopNavGeneric';
 import Footer from '../pages/Footer';
 import BlogAuthor from './BlogAuthor';
 import BlogList from './BlogList';
+import content from '../text/blog03.txt';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackToTopButton from '../generic/BackToTopButton';
+import TextToSpeech from '../generic/TextToSpeech';
 import SocialMeida from '../generic/SocialMedia';
 
 class App extends React.Component {
@@ -34,8 +36,15 @@ class App extends React.Component {
         }));
     };
     render() {
+        // Content
+        const contentUrl = content;
         // Date Publish
         const dateOfPublish = '2023-06-20';
+        const metadata = {
+            album: 'Album Name',
+            artist: 'Artist Name',
+            title: 'Audio Title'
+        };
 
         return (
             <div>
@@ -59,6 +68,11 @@ class App extends React.Component {
                         <h4 className='primary-title'>Claude.ai or Chat GPT: How to access Claude.ai?</h4>
                         <BlogAuthor datePublished={dateOfPublish} />
 
+                        <div className='row mb-3 d-none'>
+                            <div className='col-md-6'><TextToSpeech textFile={require('../text/blog03.txt')} /></div>
+                        </div>
+
+
                         <div className='quoteContainer mb-5'>
                             <q className='mb-4'>
                                 I have a feeling that with the progress of AI and the advancements in machine learning, our world will reach such a level of sophistication that most humans may appear <span className='quoteHighlight'>primitive once more.</span>
@@ -67,30 +81,21 @@ class App extends React.Component {
                                 Ali
                             </p>
                         </div>
-                        <section>
-                            <div className='text-center'>
-                                <h3 className='mt-5'>Introducing Claude.ai</h3>
-                                <div className='titleUnderLine mb-4'></div>
+                        <div className='text-center'>
+                            <h3 className='mt-5'>Introducing Claude.ai</h3>
+                            <div className='titleUnderLine mb-4'></div>
+                        </div>
+                        <p>
+                            Introducing
+                            Here be text....
+                        </p>
+                        <div className='text-center mb-5 mt-5'>
+                            <div className='bg-image'>
+                                <img className='w-100' src={require('../img/blog/Human-AI/itsmeai.webp')} style={{ width: '100%' }} alt='AI' />
                             </div>
-                            <p>
-                                Introducing Claude.ai
-                                Claude.ai is an AI assistant developed by Anthropic with a primary focus on being helpful, honest, and harmless. It possesses several key capabilities that make it stand out:
-                                <ol>
-                                    <li>Natural Language Processing: Claude excels at comprehending and responding to complex natural language requests and queries.</li>
-                                    <li>Conversational Intelligence: Designed for seamless, contextually relevant conversations, Claude engages users in a natural dialogue.</li>
-                                    <li>Limited World Knowledge: While Claude has some general knowledge to address basic factual questions, it currently doesn't match the knowledge depth of other AI assistants.</li>
-                                    <li>User Privacy Focus: Committed to safeguarding user privacy and data, Claude does not collect or store personal information.</li>
-                                    <li>Honesty: Claude is upfront about its limitations and won't attempt to guess answers, ensuring transparency in its responses.</li>
-                                    <li>Helpfulness: The primary objective of Claude is to offer valuable information and steer users in the right direction.</li>
-                                    <li> Safety-by-Design: Anthropic has diligently crafted Claude to be safe, preventing it from providing harmful, dangerous, or unethical responses.</li>
-                                </ol>
-                            </p>
-                            <div className='text-center mb-5 mt-5'>
-                                <div className='bg-image'>
-                                    <img className='w-100' src={require('../img/blog/Human-AI/itsmeai.webp')} style={{ width: '100%' }} alt='AI' />
-                                </div>
-                            </div>
-                        </section>
+                        </div>
+
+
 
                         <SocialMeida />
 
