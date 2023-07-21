@@ -87,7 +87,7 @@ class App extends React.Component {
                             </p>
                             <div className='text-center mb-5 mt-5'>
                                 <div className='bg-image'>
-                                    <img className='w-100' src={require('../img/blog/Human-AI/itsmeai.webp')} style={{ width: '100%' }} alt='AI' />
+                                    <img className='w-100' src={require('../img/blog/Human-AI/ai01.jpg')} style={{ width: '100%' }} alt='AI' />
                                 </div>
                             </div>
                         </section>
@@ -110,9 +110,28 @@ class App extends React.Component {
                                     <li>Once the VPN is active, visit Claude.ai, and you should be able to access the website as if you were located in the United States.</li>
                                 </ol>
                             </p>
+                            <p>
+                                Check out this video I've prepared demonstrating how to activate the VPN on Opera browser for iOS 17 beta:
+                            </p>
                             <div className='text-center mb-5 mt-5'>
                                 <div className='bg-image'>
-                                    <img className='w-100' src={require('../img/blog/claudebanner.webp')} style={{ width: '100%' }} alt='AI' />
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <div className='text-center'>
+                                <h3 className='mt-5'>Now, you may wonder: "Claude.ai or Chat GPT?"</h3>
+                                <div className='titleUnderLine mb-4'></div>
+                            </div>
+                            <p>
+                                Based on personal experiences with both, Chat GPT appears to be more reliable and exhibits higher intelligence compared to Claude. However, Claude.ai shines when it comes to providing up-to-date and concise responses. Notably, when dealing with lengthy text, Claude conveniently transforms it into a text file, saving space and making interactions smoother. Ultimately, your choice may depend on your specific needs and preferences.
+                                Compare responses from both for the question I asked:
+                            </p>
+
+                            <div className='text-center mb-5 mt-5'>
+                                <div className='bg-image'>
+                                    <img className='w-100 shadow-lg p-3 mb-5 bg-white rounded' src={require('../img/blog/claudevschatgpt.jpg')} style={{ width: '100%' }} alt='AI' />
                                 </div>
                             </div>
                         </section>
