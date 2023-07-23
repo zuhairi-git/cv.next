@@ -20,6 +20,8 @@ function App() {
   const getMetaTags = () => {
     const publicUrl = process.env.PUBLIC_URL;
 
+    console.log(publicUrl); // Add this line to log the value of publicUrl
+
     const getPageName = (pathname) => {
       const parts = pathname.split("/").filter(Boolean);
       return parts[parts.length - 1];
