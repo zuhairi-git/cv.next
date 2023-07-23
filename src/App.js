@@ -119,9 +119,9 @@ function App() {
       default:
         return {
           title: "CV Lanes | Landing Page",
-          description: "Professional Product Designer",
+          description: ".Professional Product Designer",
           ogTitle: "CV Lanes | Landing Page",
-          ogDescription: "Professional Product Designer",
+          ogDescription: "..Professional Product Designer",
           ogImage: `${publicUrl}/img/covers/${getPageName(
             location.pathname
           )}-default-image.jpg`,
