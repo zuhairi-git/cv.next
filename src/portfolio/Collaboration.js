@@ -145,14 +145,12 @@ class App extends React.Component {
                                 <h3 className='primary-title'>Challenges</h3>
                             </div>
                             <div className='col-sm-12 col-md-9 mb-lg-5 mb-xs-2 mb-sm-2'>
-                                <p>
-                                    <ul>
-                                        <li><b>Team-to-team and team-to-customer communication:</b> Clear and efficient communication between teams is crucial when designing and delivering services at different levels. Teams working on advanced features need to communicate effectively with those working on simpler versions to ensure consistency and avoid misunderstandings regarding capabilities, limitations, and dependencies.</li>
-                                        <li><b>User research and feedback:</b> Understanding the needs and preferences of different user groups is essential. Collaboration between simple and advanced users in user research can provide valuable data and feedback that shape the development process and guide decisions on feature inclusion or simplification.</li>
-                                        <li><b>Training:</b> Collaboration between different user levels requires training for advanced users to support and guide basic users effectively. Ensuring that even advanced features are presented in a way that all user levels can understand and use is crucial for effective collaboration.</li>
-                                        <li><b>Documentation and support:</b> Providing comprehensive documentation and support for users across different levels, including technical writers, support teams, and developers, is necessary. Addressing common user questions and problems proactively and providing resources to assist users in utilizing the service optimally is essential.</li>
-                                    </ul>
-                                </p>
+                                <ul>
+                                    <li><b>Team-to-team and team-to-customer communication:</b> Clear and efficient communication between teams is crucial when designing and delivering services at different levels. Teams working on advanced features need to communicate effectively with those working on simpler versions to ensure consistency and avoid misunderstandings regarding capabilities, limitations, and dependencies.</li>
+                                    <li><b>User research and feedback:</b> Understanding the needs and preferences of different user groups is essential. Collaboration between simple and advanced users in user research can provide valuable data and feedback that shape the development process and guide decisions on feature inclusion or simplification.</li>
+                                    <li><b>Training:</b> Collaboration between different user levels requires training for advanced users to support and guide basic users effectively. Ensuring that even advanced features are presented in a way that all user levels can understand and use is crucial for effective collaboration.</li>
+                                    <li><b>Documentation and support:</b> Providing comprehensive documentation and support for users across different levels, including technical writers, support teams, and developers, is necessary. Addressing common user questions and problems proactively and providing resources to assist users in utilizing the service optimally is essential.</li>
+                                </ul>
                             </div>
                         </div>
                         <div className="row m-lg-5 m-xs-2 m-sm-2 mt-3">
@@ -492,7 +490,7 @@ class App extends React.Component {
                             </div>
                             <div className='col-sm-12 col-md-9 mb-lg-5 mb-xs-2 mb-sm-2'>
                                 <p><b>User Testing Scenario:</b></p>
-                                <p>
+                                <div>
                                     <b>Objective:</b> To evaluate the effectiveness of the solution in terms of creativity, user-friendliness, color choices, and accessibility, based on the feedback from users.
                                     <ul>
                                         <li>
@@ -508,7 +506,7 @@ class App extends React.Component {
                                         <li><b>Note:</b> This user testing session aims to collect valuable feedback and insights to improve the solution. Your opinions and suggestions are highly valuable, so please be honest and provide as much detail as possible.
                                             Finaly, I want to thank you for participating in this user testing session.</li>
                                     </ul>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>

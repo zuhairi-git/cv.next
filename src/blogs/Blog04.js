@@ -73,16 +73,16 @@ class App extends React.Component {
                             </div>
                             <p>
                                 Claude.ai is an AI assistant developed by Anthropic with a primary focus on being helpful, honest, and harmless. It possesses several key capabilities that make it stand out:
-                                <ol>
-                                    <li>Natural Language Processing: Claude excels at comprehending and responding to complex natural language requests and queries.</li>
-                                    <li>Conversational Intelligence: Designed for seamless, contextually relevant conversations, Claude engages users in a natural dialogue.</li>
-                                    <li>Limited World Knowledge: While Claude has some general knowledge to address basic factual questions, it currently doesn't match the knowledge depth of other AI assistants.</li>
-                                    <li>User Privacy Focus: Committed to safeguarding user privacy and data, Claude does not collect or store personal information.</li>
-                                    <li>Honesty: Claude is upfront about its limitations and won't attempt to guess answers, ensuring transparency in its responses.</li>
-                                    <li>Helpfulness: The primary objective of Claude is to offer valuable information and steer users in the right direction.</li>
-                                    <li> Safety-by-Design: Anthropic has diligently crafted Claude to be safe, preventing it from providing harmful, dangerous, or unethical responses.</li>
-                                </ol>
                             </p>
+                            <ol>
+                                <li>Natural Language Processing: Claude excels at comprehending and responding to complex natural language requests and queries.</li>
+                                <li>Conversational Intelligence: Designed for seamless, contextually relevant conversations, Claude engages users in a natural dialogue.</li>
+                                <li>Limited World Knowledge: While Claude has some general knowledge to address basic factual questions, it currently doesn't match the knowledge depth of other AI assistants.</li>
+                                <li>User Privacy Focus: Committed to safeguarding user privacy and data, Claude does not collect or store personal information.</li>
+                                <li>Honesty: Claude is upfront about its limitations and won't attempt to guess answers, ensuring transparency in its responses.</li>
+                                <li>Helpfulness: The primary objective of Claude is to offer valuable information and steer users in the right direction.</li>
+                                <li> Safety-by-Design: Anthropic has diligently crafted Claude to be safe, preventing it from providing harmful, dangerous, or unethical responses.</li>
+                            </ol>
                             <div className='text-center mb-5 mt-5'>
                                 <div className='bg-image'>
                                     <img className='w-100' src={require('../img/blog/Human-AI/ai01.jpg')} style={{ width: '100%' }} alt='AI' />
@@ -99,15 +99,15 @@ class App extends React.Component {
                                 To access Claude.ai, there are different options depending on your location. If you are in the US or UK, you can readily find Claude.ai available. However, if you reside elsewhere, you can still access it by using a VPN (Virtual Private Network). One recommended method is to use the Opera browser on your mobile device, which offers a built-in VPN service that is free to use. By setting the VPN to the United States, you can access Claude.ai from any location.
                                 Alternatively, if you have a premium VPN subscription, you can use that instead. Simply connect to a server in the United States to access Claude.ai.
                                 As of July 21, 2023, I successfully accessed Claude.ai free of charge by following these steps:
-                                <ol>
-                                    <li>Download the Opera browser from either the Google Play Store (for Android devices) or the App Store (for iOS devices).</li>
-                                    <li>Install the browser on your mobile device.</li>
-                                    <li>Open the Opera browser and navigate to the settings menu.</li>
-                                    <li>Look for the VPN option and enable it.</li>
-                                    <li>Select the United States as the VPN server location.</li>
-                                    <li>Once the VPN is active, visit Claude.ai, and you should be able to access the website as if you were located in the United States.</li>
-                                </ol>
                             </p>
+                            <ol>
+                                <li>Download the Opera browser from either the Google Play Store (for Android devices) or the App Store (for iOS devices).</li>
+                                <li>Install the browser on your mobile device.</li>
+                                <li>Open the Opera browser and navigate to the settings menu.</li>
+                                <li>Look for the VPN option and enable it.</li>
+                                <li>Select the United States as the VPN server location.</li>
+                                <li>Once the VPN is active, visit Claude.ai, and you should be able to access the website as if you were located in the United States.</li>
+                            </ol>
                             <div className='text-center'>
                                 <h3 className='mt-5'>How to Video</h3>
                                 <div className='titleUnderLine mb-4'></div>
