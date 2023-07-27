@@ -3,7 +3,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const skills = [
   { name: 'UI/UX - Figma & Adobe CC', percentage: 85 },
-  { name: 'Qualitative and Quntitative Research', percentage: 85 },
+  { name: 'Qualitative and Quantitative Research', percentage: 85 },
   { name: 'Design Systems', percentage: 80 },
   { name: 'Project Management', percentage: 80 },
   { name: 'Test Management - Maze and Zephyr Scale', percentage: 85 },
