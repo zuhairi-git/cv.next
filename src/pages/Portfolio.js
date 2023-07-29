@@ -4,11 +4,11 @@ import Footer from './Footer';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioList from './PortfolioList';
 import BackToTopButton from '../generic/BackToTopButton';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 const PortfolioPage = () => {
     return (
-        <HelmetProvider>
+        <>
             <Helmet>
                 <title>Portfolio</title>
                 <meta name="description" content="Where Magic Happens" />
@@ -54,7 +54,7 @@ const PortfolioPage = () => {
                 <BackToTopButton />
                 <Footer />
             </div>
-        </HelmetProvider>
+        </>
     );
 };
 
