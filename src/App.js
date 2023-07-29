@@ -72,6 +72,16 @@ function App() {
           twitterCreator: "Ali Zuhairi",
           twitterCard: "summary",
         };
+      case "/portfolio":
+        return {
+          title: "Portfolio",
+          description: "Where Magic Happens",
+          ogType: "Portfolio Page",
+          ogImage: `${publicUrl}/img/covers/portfolio-default-image.jpg`,
+          ogImageWidth: "1200",
+          ogImageHeight: "630",
+          imageAlt: "Portfolio",
+        };
       case "/blog":
         return {
           title: "Blog",
