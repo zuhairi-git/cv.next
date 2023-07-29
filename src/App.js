@@ -61,124 +61,116 @@ function App() {
     const publicUrl = process.env.PUBLIC_URL;
 
     switch (location.pathname) {
-      case '/':
+      case "/":
         return {
-          title: 'CV Lanes | Webpage',
-          description: 'Professional Product/UI/UX Designer',
-          ogTitle: 'CV Lanes | Landing Page',
-          ogDescription: 'Professional Product Designer',
-          ogType: 'website',
-          ogImage: 'https://centerux.com/images/sites/corescene.png',
-          ogImageWidth: '1200',
-          ogImageHeight: '630',
-          twitterCreator: 'Ali Zuhairi',
-          twitterCard: 'My CV and Skills',
-          ogUrl: window.location.href
-        };
-      case '/blog':
-        return {
-          title: 'Blog',
-          description: 'To Blog... or not to Blog',
-          ogType: 'Page',
+          title: "CV Lanes | Landing Page",
+          description: "Professional Product Designer",
+          ogType: "website",
           ogImage: `${publicUrl}/img/covers/blog-default-image.jpg`,
-          ogImageWidth: '1200',
-          ogImageHeight: '630',
-          imageAlt: 'Blog',
-          ogUrl: window.location.href
+          ogImageWidth: "1200",
+          ogImageHeight: "630",
+          twitterCreator: "Ali Zuhairi",
+          twitterCard: "summary",
         };
-      case '/portfolio/jobseeking':
+      case "/blog":
         return {
-          title: 'Job Seeking Application',
-          description: 'Job Seeking Application',
-          ogType: 'Portfolio',
+          title: "Blog",
+          description: "To Blog... or not to Blog",
+          ogType: "Page",
+          ogImage: `${publicUrl}/img/covers/blog-default-image.jpg`,
+          ogImageWidth: "1200",
+          ogImageHeight: "630",
+          imageAlt: "Blog",
+        };
+      case "/portfolio/jobseeking":
+        return {
+          title: "Job Seeking Application",
+          description: "Job Seeking Application",
+          ogType: "Portfolio",
           ogImage: `${publicUrl}/img/covers/portfolio-jobseeking-default-image.jpg`,
-          ogImageWidth: '1200',
-          ogImageHeight: '630',
-          imageAlt: 'Job Seeking Application',
-          ogUrl: window.location.href
+          ogImageWidth: "1200",
+          ogImageHeight: "630",
+          imageAlt: "Job Seeking Application",
         };
-      case '/portfolio/collaboration':
-        return {
-          title: 'Collaboration Workflow Platform',
-          description: 'Collaboration Workflow Platform',
-          ogType: 'Portfolio',
-          ogImage: `${publicUrl}/img/covers/portfolio-collaboration-default-image.jpg`,
-          ogImageWidth: '1200',
-          ogImageHeight: '630',
-          imageAlt: 'Collaboration Workflow Platform',
-          ogUrl: window.location.href
-        };
-      case '/blogs/circle-of-rhythm':
-        return {
-          title: 'Daily Rhythm',
-          description: 'Circle of Daily Rhythm',
-          ogType: 'article',
-          ogImage: `${publicUrl}/img/covers/blogs-circle-of-rhythm-default-image.jpg`,
-          ogImageWidth: '1200',
-          ogImageHeight: '630',
-          imageAlt: 'Daily Rhythm',
-          ogUrl: window.location.href
-        };
-      case '/blogs/ios-notifications':
-        return {
-          title: 'Notifications on iOS',
-          description: 'How to get notifications on iOS with personal focus on?',
-          ogType: 'article',
-          ogImage: `${publicUrl}/img/covers/blogs-ios-notifications-default-image.jpg`,
-          ogImageWidth: '1200',
-          ogImageHeight: '630',
-          imageAlt: 'Notifications on iOS',
-          ogUrl: window.location.href
-        };
-      case '/blogs/premitive-human':
-        return {
-          title: 'Embracing the Era of AI',
-          description: "Humanity's Journey to Unparalleled Sophistication",
-          ogType: 'article',
-          ogImage: `${publicUrl}/img/covers/blogs-premitive-human-default-image.jpg`,
-          ogImageWidth: '1200',
-          ogImageHeight: '630',
-          imageAlt: 'Era of AI',
-          ogUrl: window.location.href
-        };
-    }
-    return undefined;
 
+      case "/portfolio/collaboration":
+        return {
+          title: "Collaboration Workflow Platform",
+          description: "Collaboration Workflow Platform",
+          ogType: "Portfolio",
+          ogImage: `${publicUrl}/img/covers/portfolio-collaboration-default-image.jpg`,
+          ogImageWidth: "1200",
+          ogImageHeight: "630",
+          imageAlt: "Collaboration Workflow Platform",
+        };
+
+      case "/blogs/circle-of-rhythm":
+        return {
+          title: "Daily Rhythm",
+          description: "Circle of Daily Rhythm",
+          ogType: "article",
+          ogImage: `${publicUrl}/img/covers/blogs-circle-of-rhythm-default-image.jpg`,
+          ogImageWidth: "1200",
+          ogImageHeight: "630",
+          imageAlt: "Daily Rhythm",
+        };
+
+      case "/blogs/ios-notifications":
+        return {
+          title: "Notifications on iOS",
+          description: "How to get notifications on iOS with personal focus on?",
+          ogType: "article",
+          ogImage: `${publicUrl}/img/covers/blogs-ios-notifications-default-image.jpg`,
+          ogImageWidth: "1200",
+          ogImageHeight: "630",
+          imageAlt: "Notifications on iOS",
+        };
+
+      case "/blogs/premitive-human":
+        return {
+          title: "Embracing the Era of AI",
+          description: "Humanity's Journey to Unparalleled Sophistication",
+          ogType: "article",
+          ogImage: `${publicUrl}/img/covers/blogs-premitive-human-default-image.jpg`,
+          ogImageWidth: "1200",
+          ogImageHeight: "630",
+          imageAlt: "Era of AI",
+        };
+
+      default:
+        return {};
+    }
   };
 
   const metaTags = getMetaTags(location.pathname);
   const element = useRoutes(routes);
 
   return (
-    <>
-      {metaTags && (
-        <HelmetProvider>
-          <Helmet>
-            <title>{metaTags.title}</title>
-            <meta name="description" content={metaTags.description} />
-            {metaTags.ogType && (
-              <>
-                <meta property="og:type" content={metaTags.ogType} />
-                <meta property="og:title" content={metaTags.title} />
-                <meta property="og:description" content={metaTags.description} />
-                <meta property="og:url" content={metaTags.ogUrl} />
-                <meta property="og:image" content={metaTags.ogImage} />
-                <meta property="og:image:width" content={metaTags.ogImageWidth} />
-                <meta property="og:image:height" content={metaTags.ogImageHeight} />
-                <meta name="twitter:title" content={metaTags.title} />
-                <meta name="twitter:description" content={metaTags.description} />
-                <meta name="twitter:image" content={metaTags.ogImage} />
-                <meta name="twitter:card" content="summary_large_image" />
-              </>
-            )}
-            {!metaTags && element}
-
-          </Helmet>
-          {element}
-        </HelmetProvider>
-      )}
-      {!metaTags && element} {/* Fallback rendering without Helmet if metaTags is undefined */}
-    </>
+    <HelmetProvider>
+      <Helmet>
+        <title>{metaTags.title}</title>
+        <meta name="description" content={metaTags.description} />
+        {metaTags.ogType && (
+          <>
+            <meta property="og:type" content={metaTags.ogType} />
+            <meta property="og:title" content={metaTags.title} />
+            <meta property="og:description" content={metaTags.description} />
+            <meta property="og:url" content={metaTags.ogUrl} />
+            <meta property="og:image" content={metaTags.ogImage} />
+            <meta property="og:image:width" content={metaTags.ogImageWidth} />
+            <meta property="og:image:height" content={metaTags.ogImageHeight} />
+            <meta name="twitter:title" content={metaTags.title} />
+            <meta name="twitter:description" content={metaTags.description} />
+            <meta name="twitter:image" content={metaTags.ogImage} />
+            <meta name="twitter:card" content="summary_large_image" />
+          </>
+        )}
+        {metaTags.imageAlt && (
+          <meta property="image:alt" content={metaTags.imageAlt} />
+        )}
+      </Helmet>
+      {element} {/* Render the element without wrapping it in <BrowserRouter> */}
+    </HelmetProvider>
   );
 }
 
