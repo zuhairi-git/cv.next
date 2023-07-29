@@ -12,15 +12,21 @@ const PortfolioPage = () => {
             <Helmet>
                 <title>Portfolio</title>
                 <meta name="description" content="Where Magic Happens" />
-                <link rel="canonical" href="https://next.cvslanes.com/portfolio" />
+
+                <meta property="og:title" content="My Portfolio" />
+                <meta property="og:description" content="Where Magic Happens" />
+                <meta property="og:url" content="https://next.cvslanes.com/portfolio" />
                 <meta property="og:type" content="Portfolio Page" />
                 <meta property="og:image" content="https://cdn.cvlanes.com/images/covers/portfolio-collaboration-default-image.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
+                
                 <meta name="twitter:title" content="Portfolio" />
                 <meta name="twitter:description" content="Where Magic Happens" />
+                <meta name="twitter:url" content="https://next.cvslanes.com/portfolio" />
                 <meta name="twitter:image" content="https://cdn.cvlanes.com/images/covers/portfolio-collaboration-default-image.jpg" />
                 <meta name="twitter:card" content="summary_large_image" />
+
             </Helmet>
             <div className='portfolio-bg'>
                 <TopNavGeneric />
