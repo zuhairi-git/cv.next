@@ -80,17 +80,6 @@ function App() {
           twitterCard: 'My CV and Skills',
           ogUrl: window.location.href
         };
-      case '/portfolio':
-        return {
-          title: 'Portfolio',
-          description: 'Where Magic Happens',
-          ogType: 'Page',
-          ogImage: `${publicUrl}/img/covers/portfolio-default-image.jpg`,
-          ogImageWidth: '1200',
-          ogImageHeight: '630',
-          imageAlt: 'Portfolio',
-          ogUrl: window.location.href
-        };
       case '/blog':
         return {
           title: 'Blog',
