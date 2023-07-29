@@ -142,6 +142,8 @@ function App() {
           ogUrl: window.location.href
         };
     }
+    return undefined;
+
   };
 
   const metaTags = getMetaTags(location.pathname);
@@ -169,9 +171,8 @@ function App() {
                 <meta name="twitter:card" content="summary_large_image" />
               </>
             )}
-            {metaTags.imageAlt && (
-              <meta property="image:alt" content={metaTags.imageAlt} />
-            )}
+            {!metaTags && element}
+
           </Helmet>
           {element}
         </HelmetProvider>
