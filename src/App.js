@@ -60,11 +60,6 @@ function App() {
   const getMetaTags = (pathname) => {
     const publicUrl = process.env.PUBLIC_URL;
 
-    const getPageName = (pathname) => {
-      const parts = pathname.split('/').filter(Boolean);
-      return parts[parts.length - 1];
-    };
-
     switch (location.pathname) {
       case '/':
         return {
