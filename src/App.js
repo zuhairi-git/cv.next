@@ -146,17 +146,6 @@ function App() {
           imageAlt: 'Era of AI',
           ogUrl: window.location.href
         };
-      default:
-        return {
-          title: 'CV Lanes | Landing Page',
-          description: '.Professional Product Designer',
-          ogTitle: 'CV Lanes | Landing Page',
-          ogDescription: '..Professional Product Designer',
-          ogImage: `${publicUrl}/img/covers/${getPageName(location.pathname)}-default-image.jpg`,
-          ogImageWidth: '1200',
-          ogImageHeight: '630',
-          ogUrl: window.location.href
-        };
     }
   };
 
@@ -164,31 +153,36 @@ function App() {
   const element = useRoutes(routes);
 
   return (
-    <HelmetProvider>
-      <Helmet>
-        <title>{metaTags.title}</title>
-        <meta name="description" content={metaTags.description} />
-        {metaTags.ogType && (
-          <>
-            <meta property="og:type" content={metaTags.ogType} />
-            <meta property="og:title" content={metaTags.title} />
-            <meta property="og:description" content={metaTags.description} />
-            <meta property="og:url" content={metaTags.ogUrl} />
-            <meta property="og:image" content={metaTags.ogImage} />
-            <meta property="og:image:width" content={metaTags.ogImageWidth} />
-            <meta property="og:image:height" content={metaTags.ogImageHeight} />
-            <meta name="twitter:title" content={metaTags.title} />
-            <meta name="twitter:description" content={metaTags.description} />
-            <meta name="twitter:image" content={metaTags.ogImage} />
-            <meta name="twitter:card" content="summary_large_image" />
-          </>
-        )}
-        {metaTags.imageAlt && (
-          <meta property="image:alt" content={metaTags.imageAlt} />
-        )}
-      </Helmet>
-      {element} {/* Render the element without wrapping it in <BrowserRouter> */}
-    </HelmetProvider>
+    <>
+      {metaTags && (
+        <HelmetProvider>
+          <Helmet>
+            <title>{metaTags.title}</title>
+            <meta name="description" content={metaTags.description} />
+            {metaTags.ogType && (
+              <>
+                <meta property="og:type" content={metaTags.ogType} />
+                <meta property="og:title" content={metaTags.title} />
+                <meta property="og:description" content={metaTags.description} />
+                <meta property="og:url" content={metaTags.ogUrl} />
+                <meta property="og:image" content={metaTags.ogImage} />
+                <meta property="og:image:width" content={metaTags.ogImageWidth} />
+                <meta property="og:image:height" content={metaTags.ogImageHeight} />
+                <meta name="twitter:title" content={metaTags.title} />
+                <meta name="twitter:description" content={metaTags.description} />
+                <meta name="twitter:image" content={metaTags.ogImage} />
+                <meta name="twitter:card" content="summary_large_image" />
+              </>
+            )}
+            {metaTags.imageAlt && (
+              <meta property="image:alt" content={metaTags.imageAlt} />
+            )}
+          </Helmet>
+          {element}
+        </HelmetProvider>
+      )}
+      {!metaTags && element} {/* Fallback rendering without Helmet if metaTags is undefined */}
+    </>
   );
 }
 

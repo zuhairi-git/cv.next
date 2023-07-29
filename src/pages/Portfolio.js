@@ -20,7 +20,7 @@ const PortfolioPage = () => {
                 <meta property="og:image" content="https://cdn.cvlanes.com/images/covers/portfolio-collaboration-default-image.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
-                
+
                 <meta name="twitter:title" content="Portfolio" />
                 <meta name="twitter:description" content="Where Magic Happens" />
                 <meta name="twitter:url" content="https://next.cvslanes.com/portfolio" />
