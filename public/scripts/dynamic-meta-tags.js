@@ -13,10 +13,7 @@ window.dynamicMetaTags = metaTags;
 
 // Render the dynamic meta tags to a string
 const metaTagsString = ReactDOMServer.renderToString(
-  <>
-    {helmet.title.toComponent()}
-    {helmet.meta.toComponent()}
-  </>
+  React.createElement(React.Fragment, null, helmet.title.toComponent(), helmet.meta.toComponent())
 );
 
 document.getElementById("dynamic-meta-tags").innerHTML = metaTagsString;
