@@ -10,14 +10,12 @@ const PortfolioPage = () => {
     return (
         <>
             <Helmet>
-                <title>Portfolio</title>
-                <meta name="description" content="Where Magic Happens" />
-
-                <meta property="og:title" content="My Portfolio" />
-                <meta property="og:description" content="Where Magic Happens" />
-                <meta property="og:url" content="https://next.cvslanes.com/portfolio" />
-                <meta property="og:type" content="Portfolio Page" />
-                <meta property="og:image" content="https://cdn.cvlanes.com/images/covers/portfolio-collaboration-default-image.jpg" />
+                <meta name="title" property="og:title" content="My Portfolio"></meta>
+                <meta name="description" property="og:description" content="Where Magic Happens"></meta>
+                <meta name="author" content="Ali Zuhairi"></meta>
+                <meta name="url" property="og:url" content="https://next.cvslanes.com/portfolio" />
+                <meta name="type" property="og:type" content="Portfolio Page" />
+                <meta name="image" property="og:image" content="https://cdn.cvlanes.com/images/covers/portfolio-collaboration-default-image.jpg"></meta>
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
 

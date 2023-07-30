@@ -71,7 +71,7 @@ function App() {
           ogImageHeight: "630",
           twitterCreator: "Ali Zuhairi",
           twitterCard: "summary",
-        };
+        };/*
       case "/portfolio":
         return {
           title: "Portfolio",
@@ -81,7 +81,7 @@ function App() {
           ogImageWidth: "1200",
           ogImageHeight: "630",
           imageAlt: "Portfolio",
-        };
+        };*/
       case "/blog":
         return {
           title: "Blog",
