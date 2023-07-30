@@ -1,5 +1,5 @@
-import { Helmet } from "react-helmet-async";
-import ReactDOMServer from "react-dom/server";
+const { Helmet } = require("react-helmet-async");
+const ReactDOMServer = require("react-dom/server");
 
 const metaTags = window.dynamicMetaTags || {};
 
@@ -13,10 +13,10 @@ window.dynamicMetaTags = metaTags;
 
 // Render the dynamic meta tags to a string
 const metaTagsString = ReactDOMServer.renderToString(
-    <>
-        {helmet.title.toComponent()}
-        {helmet.meta.toComponent()}
-    </>
+  <>
+    {helmet.title.toComponent()}
+    {helmet.meta.toComponent()}
+  </>
 );
 
 document.getElementById("dynamic-meta-tags").innerHTML = metaTagsString;
