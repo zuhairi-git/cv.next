@@ -18,13 +18,13 @@ const PortfolioPage = () => {
                 <meta property="og:url" content="https://next.cvlanes.com/portfolio" />
                 <meta property="og:title" content="Portfolio" />
                 <meta property="og:description" content="Where Magic Happens" />
-                <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+                <meta property="og:image" content="https://cdn.cvlanes.com/images/covers/portfolio-collaboration-default-image.jpg" />
 
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://next.cvlanes.com/portfolio" />
                 <meta property="twitter:title" content="Portfolio" />
                 <meta property="twitter:description" content="Where Magic Happens" />
-                <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+                <meta property="twitter:image" content="https://cdn.cvlanes.com/images/covers/portfolio-collaboration-default-image.jpg" />
             </Helmet>
 
             <div className='portfolio-bg'>
