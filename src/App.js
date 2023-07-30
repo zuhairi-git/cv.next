@@ -71,7 +71,7 @@ function App() {
           ogImageHeight: "630",
           twitterCreator: "Ali Zuhairi",
           twitterCard: "summary",
-        };/*
+        };
       case "/portfolio":
         return {
           title: "Portfolio",
@@ -81,7 +81,7 @@ function App() {
           ogImageWidth: "1200",
           ogImageHeight: "630",
           imageAlt: "Portfolio",
-        };*/
+        };
       case "/blog":
         return {
           title: "Blog",
@@ -162,11 +162,12 @@ function App() {
         <meta name="description" content={metaTags.description} />
         {metaTags.ogType && (
           <>
-            <meta property="og:type" content={metaTags.ogType} />
-            <meta property="og:title" content={metaTags.title} />
-            <meta property="og:description" content={metaTags.description} />
-            <meta property="og:url" content={metaTags.ogUrl} />
-            <meta property="og:image" content={metaTags.ogImage} />
+            <meta name="title" property="og:title" content={metaTags.title} />
+            <meta name="description" property="og:description" content={metaTags.description} />
+            <meta name="author" content="Ali Zuhairi"></meta>
+            <meta name="type" property="og:type" content={metaTags.ogType} />
+            <meta name="url" property="og:url" content={metaTags.ogUrl} />
+            <meta name="image" property="og:image" content={metaTags.ogImage} />
             <meta property="og:image:width" content={metaTags.ogImageWidth} />
             <meta property="og:image:height" content={metaTags.ogImageHeight} />
             <meta name="twitter:title" content={metaTags.title} />
