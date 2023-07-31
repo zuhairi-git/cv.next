@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <HelmetProvider> {/* Wrap the entire app with HelmetProvider */}
+    <HelmetProvider> 
       <BrowserRouter>
         <App />
       </BrowserRouter>
