@@ -10,6 +10,7 @@ import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import WorkSkillset from './WorkSkillset';
 import WorkExperience from './WorkExperience';
 import WorkAchievements from './WorkAchievements';
+import { Helmet } from 'react-helmet';
 
 class App extends React.Component {
     componentDidMount() {
@@ -20,6 +21,24 @@ class App extends React.Component {
     render() {
         return (
             <>
+                <Helmet>
+                    <title>CV Lanes | Webpage</title>
+                    <meta name="title" content="CV Lanes | Webpage" />
+                    <meta name="description" content="Professional Product/UI/UX Designer" />
+
+                    <meta property="og:type" content="website" />
+                    <meta property="og:url" content="https://next.cvlanes.com/" />
+                    <meta property="og:title" content="Portfolio" />
+                    <meta property="og:description" content="Professional Product/UI/UX Designer" />
+                    <meta property="og:image" content="https://centerux.com/images/sites/corescene.png" />
+
+                    <meta property="twitter:card" content="summary_large_image" />
+                    <meta property="twitter:url" content="https://next.cvlanes.com/" />
+                    <meta property="twitter:title" content="CV Lanes | Webpage" />
+                    <meta property="twitter:description" content="Professional Product/UI/UX Designer" />
+                    <meta property="twitter:image" content="https://centerux.com/images/sites/corescene.png" />
+                </Helmet>
+
                 <TopNav />
 
                 <div className='hero-bg'>
