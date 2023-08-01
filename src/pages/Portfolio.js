@@ -4,7 +4,7 @@ import Footer from './Footer';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioList from './PortfolioList';
 import BackToTopButton from '../generic/BackToTopButton';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 const PortfolioPage = () => {
     return (
