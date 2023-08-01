@@ -28,15 +28,15 @@ class App extends React.Component {
 
                     <meta property="og:type" content="website" />
                     <meta property="og:url" content="https://next.cvlanes.com/" />
-                    <meta property="og:title" content="Portfolio" />
+                    <meta property="og:title" content="CV Lanes | Webpage" />
                     <meta property="og:description" content="Professional Product/UI/UX Designer" />
-                    <meta property="og:image" content="https://centerux.com/images/sites/corescene.png" />
+                    <meta property="og:image" content="https://cdn.cvlanes.com/images/covers/default-image.jpg" />
 
                     <meta property="twitter:card" content="summary_large_image" />
                     <meta property="twitter:url" content="https://next.cvlanes.com/" />
                     <meta property="twitter:title" content="CV Lanes | Webpage" />
                     <meta property="twitter:description" content="Professional Product/UI/UX Designer" />
-                    <meta property="twitter:image" content="https://centerux.com/images/sites/corescene.png" />
+                    <meta property="twitter:image" content="https://cdn.cvlanes.com/images/covers/default-image.jpg" />
                 </Helmet>
 
                 <TopNav />
