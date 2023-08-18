@@ -335,7 +335,7 @@ div .card-content {
     background-image: url('img/blog/blog-repeat-bg.jpg');
     -webkit-filter: grayscale(70%);
     filter: grayscale(70%);
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -349,7 +349,7 @@ div .card-content {
     background-image: url('img/portfolio-repeat-bg-2.jpg');
     -webkit-filter: grayscale(70%);
     filter: grayscale(70%);
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
     bottom: 0px;
