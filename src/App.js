@@ -8,6 +8,7 @@ import Blog01 from "./blogs/Blog01";
 import Blog02 from "./blogs/Blog02";
 import Blog03 from "./blogs/Blog03";
 import Blog04 from "./blogs/Blog04";
+import Blog05 from "./blogs/Blog05";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <Route path="/blogs/ios-notifications" element={<Blog02 />} />
       <Route path="/blogs/premitive-human" element={<Blog03 />} />
       <Route path="/blogs/claude-ai" element={<Blog04 />} />
+      <Route path="/blogs/hiring-process" element={<Blog05 />} />
     </Routes>
   );
 }
