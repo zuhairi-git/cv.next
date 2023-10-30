@@ -73,7 +73,7 @@ const achievementsData = [
 
 const AchievementCard = ({ achievement }) => {
   return (
-    <div className="card brandBg text-light mb-3 d-flex border-0">
+    <div className="card brandBg text-light mb-3 d-flex border-0 pt-2 pb-2" style={{borderRadius: '30px'}}>
       {/* Check the hidden flag before rendering the image */}
       {achievement.hidden ? null : (
         <img

@@ -21,7 +21,7 @@ class WorkHero extends React.Component {
                                     <div className="mb-3">
                                         <div style={{ fontSize: '1.4rem' }}><b>I'm</b></div>
                                         <h1 className="display-1 fw-bold">Ali Zuhairi</h1>
-                                        <h2 style={{ fontSize: '1.4rem' }}>
+                                        <h2 style={{ fontSize: '1.4rem', minHeight: '3.5rem' }}>
                                             <TypewriterComponent
                                                 options={{
                                                     strings: ['Professional Product Designer', 'Web Designer', 'Workflow Management Developer', 'Web UI Developer', 'Front End UI Developer', 'App Designer', 'App UI Developer'],
