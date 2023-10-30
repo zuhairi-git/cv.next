@@ -6,7 +6,7 @@ import DropDown from './DropDown';
 
 function ResponsiveNavbar() {
   return (
-    <Navbar sticky="top" className='brand-light-color-bg blur' expand="lg">
+    <Navbar sticky="top" className='navbar nav navbar-dark brand-light-color-bg blur' expand="lg">
       <Container>
         <Navbar.Brand href="/"><img src={logo} style={{ width: '50px' }} alt='Logo'/></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
