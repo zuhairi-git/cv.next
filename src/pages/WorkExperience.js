@@ -2,38 +2,38 @@ import React from 'react';
 
 const experiences = [
   {
-    date: '2017 - Present',
-    position: 'Professional Product Designer',
+    date: '2017 - 2023',
+    position: 'Professional Product Designer & IT Expert',
     company: 'Reslink, Espoo, Finland',
     description: 'Workflow and Cloud Management, WebApp (SaaS), and Mobile.',
   },
   {
-    date: '2016 - Present',
-    position: 'Senior UI/UX Designer',
+    date: '2016 - 2023',
+    position: 'Senior UI/UX Designer & IT Expert',
     company: 'Reslink, Helsinki, Finland',
-    description: 'Web Application UI/UX and Android UI Development.',
+    description: 'Web Application, Android UI Development, and VPN Management.',
   },
   {
     date: '2014 - 2016',
-    position: 'Graphic Designer UI/UX',
+    position: 'Graphic Designer UI/UX & IT Expert',
     company: 'Reslink, Helsinki, Finland',
-    description: 'Graphic and Website Designer, Android and iOS Graphics and Prototype.',
+    description: 'Graphic & Website Designer, Android and iOS Prototyping, & MDM Management.',
   },
   {
     date: '2000 - 2014',
-    position: 'Freelance Web and Mobile UI Designer',
+    position: 'Freelance IT Expert & UI Developer',
     company: 'From Damascus to Espoo',
     description: 'Website and Android Developer.',
   },
   {
     date: 'Long time ago',
-    position: 'Graphic Designer and Publisher',
+    position: 'Graphic Designer & IT Expert',
     company: 'Various Magazines and Newspapers — Tehran, Iran',
     description: '',
   },
   {
     date: 'Once upon a time',
-    position: 'Junior Publisher - Junior IT Expert',
+    position: 'Junior Publisher & Junior IT Expert',
     company: 'Study and Work',
     description: '',
   },
