@@ -27,6 +27,16 @@ const BlogPage = ({ id, title, to, image, content, style, readMoreText }) => {
 const BlogList = ({ idsToShow, style }) => {
   const blogs = [
     {
+      id: 6,
+      title: "Suggesting the implementation of a transparency mandate for the hiring procedure",
+      to: '/blogs/hiring-process',
+      image: require('../img/blog/hiring-process/hiring-process.jpg'),
+      content: 'Suggesting the implementation of a transparency mandate for the hiring procedure',
+      hidden: false,
+      readMoreText: 'Read More',
+    },
+
+    {
       id: 5,
       title: "Quantum AI",
       to: '',
