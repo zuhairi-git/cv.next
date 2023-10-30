@@ -1,0 +1,124 @@
+/* Responsive Hidden Options */
+/* .hidden-xxs */
+@media only screen and (max-width: 368px) {
+    .hidden-xxs {
+        display: none !important;
+    }
+
+    .sectionSeparatorBG {
+        background-color: #ffffff;
+        box-shadow: #aaaaaa 2px 2px 20px;
+        border-radius: 30px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+}
+
+/* .hidden-xs */
+@media only screen and (max-width: 576px) {
+    .hidden-xs {
+        display: none !important;
+    }
+
+    .sectionSeparatorBG {
+        background-color: #ffffff;
+        box-shadow: #aaaaaa 2px 2px 20px;
+        border-radius: 30px;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+/* .hidden-sm */
+@media only screen and (max-width: 768px) {
+    .hidden-sm {
+        display: none !important;
+    }
+
+    .sectionSeparatorBG {
+        background-color: #ffffff;
+        box-shadow: #aaaaaa 2px 2px 20px;
+        border-radius: 30px;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+/* .hidden-md */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+
+/* .hidden-lg */
+@media only screen and (min-width: 992px) {
+    .hidden-lg {
+        display: none !important;
+    }
+}
+
+/* .hidden-xl */
+@media only screen and (min-width: 1200px) {
+    .hidden-xl {
+        display: none !important;
+    }
+}
+
+/* .hidden-xxl */
+@media only screen and (min-width: 1441px) {
+    .hidden-xxl {
+        display: none !important;
+    }
+}
+
+/* Responsive Hidden Options */
+/* .hidden-xxs */
+@media only screen and (max-width: 368px) {
+    .hidden-xxs {
+        display: none !important;
+    }
+}
+
+/* .hidden-xs */
+@media only screen and (max-width: 576px) {
+    .hidden-xs {
+        display: none !important;
+    }
+}
+
+/* .hidden-sm */
+@media only screen and (max-width: 768px) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+
+/* .hidden-md */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+
+/* .hidden-lg */
+@media only screen and (min-width: 992px) {
+    .hidden-lg {
+        display: none !important;
+    }
+}
+
+/* .hidden-xl */
+@media only screen and (min-width: 1200px) {
+    .hidden-xl {
+        display: none !important;
+    }
+}
+
+/* .hidden-xxl */
+@media only screen and (min-width: 1441px) {
+    .hidden-xxl {
+        display: none !important;
+    }
+}

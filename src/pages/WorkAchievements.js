@@ -102,7 +102,7 @@ const Achievements = () => {
 
   return (
     <div className="container" id="achievements">
-      <div className="p-5">
+      <div className="sectionSeparatorBG">
         <header className="section-header text-center wow zoomIn pt-3" data-wow-delay="0.1s">
           <p className="sectionSeparator">A Journey of Success</p>
           <h2>Achievements and Milestones</h2>
