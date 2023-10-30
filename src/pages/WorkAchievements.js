@@ -107,7 +107,7 @@ const Achievements = () => {
           <p className="sectionSeparator">A Journey of Success</p>
           <h2>Achievements and Milestones</h2>
         </header>
-        <div className="row justify-content-center pb-5">
+        <div className="row p-4 justify-content-center pb-5">
           <div className="col-md-3 wow zoomIn" data-wow-delay="0.1s">
             {column1.map((achievement, index) => (
               <AchievementCard key={index} achievement={achievement} />
