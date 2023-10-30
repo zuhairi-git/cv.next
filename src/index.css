@@ -9,9 +9,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
 
 /*--------------------------------------------------------------
-# Main
-
+# Brand
 --------------------------------------------------------------*/
+.brandBg {
+    background-color: #1EB6C3;
+}
+
+.brandColors {
+    color: #1EB6C3;
+    color: #C8E7EA;
+    color: #EDEDF4;
+    color: #0D757F;
+    color: #FFE54C;
+    color: #def3f6;
+}
+
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+
+.imageCopyright {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    color: #939393;
+    border-radius: 100px;
+    padding: 2px 8px 3px;
+    font-size: 9px;
+    font-style: italic;
+}
+
+.imageCopyrightContainer {
+    margin-bottom: -20px;
+    z-index: auto;
+    position: relative;
+}
+
+.description {
+    font-size: 10px;
+    color: #8c8c8c !important;
+    font-style: italic;
+}
+
 .connectWithMe {
     background: #fff;
     text-align: center;
@@ -22,20 +61,10 @@
     width: auto;
 }
 
-
 .dashedLineHide {
     border-bottom: 1px dashed #d8d8d8;
     margin-top: -35px;
 }
-
-.brandColors {
-    color: #1EB6C3;
-    color: #C8E7EA;
-    color: #EDEDF4;
-    color: #0D757F;
-    color: #FFE54C;
-    color: #def3f6;
-  }
 
 .back-to-top-btn {
     position: fixed;
@@ -135,6 +164,15 @@ img {
     width: 70px;
     border: 0;
     border-bottom: 4px solid #1EB6C3;
+    margin: 0.5em auto;
+    font-weight: 600;
+}
+
+.titleUnderLineWhite {
+    display: block;
+    width: 70px;
+    border: 0;
+    border-bottom: 4px solid #ffffff;
     margin: 0.5em auto;
     font-weight: 600;
 }

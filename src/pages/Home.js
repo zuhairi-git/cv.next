@@ -41,45 +41,43 @@ class App extends React.Component {
 
                 <TopNav />
 
-                <div className='hero-bg'>
-                    <div className="hero hero-bg-img" id="home">
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-sm-12 col-md-6">
-                                    <div className="hero-content">
-                                        <div className="hero-text mb-3 text-start">
-                                            <div className='text-light' style={{ fontSize: '1.4rem' }}><b>I'm</b></div>
-                                            <h1>Ali Zuhairi</h1>
-                                            <h2 style={{ fontSize: '1.4rem' }}>
-                                                <TypewriterComponent
-                                                    options={{
-                                                        strings: ['Professional Product Designer', 'Web Designer', 'Workflow Management Developer', 'Web UI Developer', 'Front End UI Developer', 'App Designer', 'App UI Developer'],
-                                                        autoStart: true,
-                                                        delay: 30,
-                                                        deleteSpeed: 10,
-                                                        loop: true,
-                                                    }}
-                                                />
-                                            </h2>
+                <div className="hero" id="home">
+                    <div className="container">
+                        <div className="row align-items-center">
+                            <div className="col-sm-12 col-md-6">
+                                <div className="hero-content">
+                                    <div className="mb-3 text-start">
+                                        <div style={{ fontSize: '1.4rem' }}><b>I'm</b></div>
+                                        <h1 className="display-1 fw-bold">Ali Zuhairi</h1>
+                                        <h2 style={{ fontSize: '1.4rem' }}>
+                                            <TypewriterComponent
+                                                options={{
+                                                    strings: ['Professional Product Designer', 'Web Designer', 'Workflow Management Developer', 'Web UI Developer', 'Front End UI Developer', 'App Designer', 'App UI Developer'],
+                                                    autoStart: true,
+                                                    delay: 30,
+                                                    deleteSpeed: 10,
+                                                    loop: true,
+                                                }}
+                                            />
+                                        </h2>
+                                    </div>
+                                    <hr />
+                                    <div className="reminderSelf text-start mt-4 mb-5">
+                                        <h5 className='reminderSelf'>NOTE TO SELF</h5>
+                                        <div>
+                                            <FormatQuoteIcon /> Always remember to seek inspiration from the world around you. The smallest details and the foremost wonders can ignite a spark within your mind and lead you to create something exceptional. Allow your imagination to roam freely, unbound by limitations, and be fearless in pushing the boundaries of what's possible.<FormatQuoteIcon />
                                         </div>
-                                        <hr className='text-light' />
-                                        <div className="reminderSelf text-start mt-4 mb-5">
-                                            <h5 className='reminderSelf'>NOTE TO SELF</h5>
-                                            <div className='text-light'>
-                                                <FormatQuoteIcon /> Always remember to seek inspiration from the world around you. The smallest details and the foremost wonders can ignite a spark within your mind and lead you to create something exceptional. Allow your imagination to roam freely, unbound by limitations, and be fearless in pushing the boundaries of what's possible.<FormatQuoteIcon />
-                                            </div>
-                                            <i className='text-light'><b>- Ali</b></i>
-                                        </div>
-                                        <div className='mb-3 d-none'>
-                                            <a className="btn button-primary mb-2 hidden-xxs hidden-xs hidden-sm" href="#team">Contact Me</a>
-                                            <a className="btn button-primary mb-2 hidden-md hidden-lg hidden-xl hidden-xxl" href="#teammobile">Contact Me</a>
-                                        </div>
+                                        <i><b>- Ali</b></i>
+                                    </div>
+                                    <div className='mb-3 d-none'>
+                                        <a className="btn button-primary mb-2 hidden-xxs hidden-xs hidden-sm" href="#team">Contact Me</a>
+                                        <a className="btn button-primary mb-2 hidden-md hidden-lg hidden-xl hidden-xxl" href="#teammobile">Contact Me</a>
                                     </div>
                                 </div>
-                                <div className="col-sm-12 col-md-6 d-md-block">
-                                    <div className="hero-image pe-0 wow zoomIn" data-wow-delay="0.1s">
-                                        <img src={Hero} alt="Ali" />
-                                    </div>
+                            </div>
+                            <div className="col-sm-12 col-md-6 d-md-block">
+                                <div className="hero-image pe-0 wow zoomIn" data-wow-delay="0.1s">
+                                    <img src={Hero} alt="Ali" />
                                 </div>
                             </div>
                         </div>
@@ -132,19 +130,12 @@ class App extends React.Component {
                 <WorkExperience />
 
                 <div className='separator'></div>
-                <div className='custom-bg'>
-                    <div className="custom-shape-divider-top-1688373964">
-                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                            <path d="M1200 0L0 0 892.25 114.72 1200 0z" className="shape-fill"></path>
-                        </svg>
-                    </div>
 
-                    <WorkAchievements />
-                    <div className="custom-shape-divider-bottom-1688374069">
-                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                            <path d="M1200 0L0 0 892.25 114.72 1200 0z" className="shape-fill"></path>
-                        </svg>
-                    </div>
+                <WorkAchievements />
+                <div className="custom-shape-divider-bottom-1688374069">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M1200 0L0 0 892.25 114.72 1200 0z" className="shape-fill"></path>
+                    </svg>
                 </div>
 
                 <div className="team mb-5 mt-5 hidden-xxs hidden-xs hidden-sm" id="team">
