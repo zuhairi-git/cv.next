@@ -13,13 +13,12 @@ class WorkHero extends React.Component {
     render() {
         return (
             <>
-
-                <div className="hero" id="home">
-                    <div className="container">
+                <div className="container">
+                    <div className="hero" id="home">
                         <div className="row align-items-center">
-                            <div className="col-sm-12 col-md-6">
-                                <div className="hero-content">
-                                    <div className="mb-3 text-start">
+                            <div className="col-sm-12 col-md-5">
+                                <div className="p-5">
+                                    <div className="mb-3">
                                         <div style={{ fontSize: '1.4rem' }}><b>I'm</b></div>
                                         <h1 className="display-1 fw-bold">Ali Zuhairi</h1>
                                         <h2 style={{ fontSize: '1.4rem' }}>
