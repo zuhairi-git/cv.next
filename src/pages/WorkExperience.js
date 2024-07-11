@@ -2,6 +2,12 @@ import React from 'react';
 
 const experiences = [
   {
+    date: '2023 - Present',
+    position: 'Professional Product Designer',
+    company: 'Webropol, Helsinki, Finland',
+    description: 'Product vision, specifying features, prototyping, and handing off design system to developers.',
+  },
+  {
     date: '2017 - 2023',
     position: 'Professional Product Designer & IT Expert',
     company: 'Reslink, Espoo, Finland',
