@@ -9,7 +9,7 @@ const experiences = [
   },
   {
     date: '2017 - 2023',
-    position: 'Professional Product Designer & IT Expert',
+    position: 'Professional Product Designer',
     company: 'Reslink, Espoo, Finland',
     description: 'Workflow and Cloud Management, WebApp (SaaS), and Mobile.',
   },
