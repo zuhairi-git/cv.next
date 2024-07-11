@@ -4,7 +4,7 @@ const HeadTags = (props) => {
 
     const {
         title = "Circle of Daily Rhythm",
-        metaAuthor = "Ali Zuhairi",
+        metaAuthor = "Ali Al-Zuhairi",
         metaWebsite = "https://cvlanes.com",
         metaSiteName = "https://cvlanes.com",
         metaImage = "https://cvlanes.com",

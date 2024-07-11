@@ -77,7 +77,7 @@ class App extends React.Component {
                                     </div>
                                     <div className="team-text text-start">
                                         <div style={{ borderLeft: 'solid 3px #FFE54C', paddingLeft: '10px' }} className='mb-3'>
-                                            <h2>Ali Zuhairi</h2>
+                                            <h2>Ali Al-Zuhairi</h2>
                                             <h4 style={{ marginBottom: '0', lineHeight: '20px' }}>Creative Problem-Solving, Divergent Thinking, Thoughtful Disruption & Exploring New Perspectives</h4>
                                         </div>
                                         <div className="team-social pb-1">
@@ -113,7 +113,7 @@ class App extends React.Component {
                                 <div className="col-lg-12 wow fadeInUp" data-wow-delay="0.0s">
                                     <div className="text-start">
                                         <div style={{ borderLeft: 'solid 3px #FFE54C', paddingLeft: '10px' }} className='mb-3'>
-                                            <h2>Ali Zuhairi</h2>
+                                            <h2>Ali Al-Zuhairi</h2>
                                             <p style={{ marginBottom: '0', lineHeight: '20px' }}>Creative Problem-Solving, Divergent Thinking, Thoughtful Disruption & Exploring New Perspectives</p>
                                         </div>
                                         <div className="team-social text-center d-flex pb-1">

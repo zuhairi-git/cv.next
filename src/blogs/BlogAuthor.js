@@ -11,7 +11,7 @@ class App extends React.Component {
                         <img src={require('../img/ali.png')} className="blog-author" alt="cover" />
                     </div>
                     <div className='position-relative me-2'>
-                        <h5 className='blog-author-name'>Ali Zuhairi</h5>
+                        <h5 className='blog-author-name'>Ali Al-Zuhairi</h5>
                         <p className='blog-author-position text-secondary'>Professional Product Designer <br /> Published on {datePublished}</p>
                     </div>
                 </div>

@@ -20,7 +20,7 @@ class WorkHero extends React.Component {
                                 <div className="p-5">
                                     <div className="mb-3">
                                         <div style={{ fontSize: '1.4rem' }}><b>I'm</b></div>
-                                        <h1 className="display-1 fw-bold">Ali Zuhairi</h1>
+                                        <h1 className="display-1 fw-bold">Ali Al-Zuhairi</h1>
                                         <h2 style={{ fontSize: '1.4rem', minHeight: '3.5rem' }}>
                                             <TypewriterComponent
                                                 options={{

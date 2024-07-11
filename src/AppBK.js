@@ -32,7 +32,7 @@ function App() {
           ogImage: 'https://centerux.com/images/sites/corescene.png',
           ogImageWidth: "1200",
           ogImageHeight: "630",
-          twitterCreator: "Ali Zuhairi",
+          twitterCreator: "Ali Al-Zuhairi",
           twitterCard: "My CV and Skills",
         };
       case "/portfolio":
