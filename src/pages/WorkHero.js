@@ -15,12 +15,12 @@ class WorkHero extends React.Component {
             <>
                 <div className="container">
                     <div className="hero" id="home">
-                        <div className="row align-items-center">
+                        <div className="row align-items-center justify-content-center">
                             <div className="col-sm-12 col-md-5">
-                                <div className="p-5">
+                                <div className="p-3">
                                     <div className="mb-3">
                                         <div style={{ fontSize: '1.4rem' }}><b>I'm</b></div>
-                                        <h1 className="display-1 fw-bold">Ali Al-Zuhairi</h1>
+                                        <h1 className="display-2 fw-bold">Ali Al-Zuhairi</h1>
                                         <h2 style={{ fontSize: '1.4rem', minHeight: '3.5rem' }}>
                                             <TypewriterComponent
                                                 options={{
