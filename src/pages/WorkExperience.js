@@ -3,7 +3,7 @@ import React from 'react';
 const experiences = [
   {
     date: '2023 - Present',
-    position: 'Professional Product Designer',
+    position: 'Product Designer | Product Owner',
     company: 'Webropol, Helsinki, Finland',
     description: 'Product vision, specifying features, prototyping, and handing off design system to developers.',
   },

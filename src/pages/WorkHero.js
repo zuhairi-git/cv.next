@@ -24,7 +24,7 @@ class WorkHero extends React.Component {
                                         <h2 style={{ fontSize: '1.4rem', minHeight: '3.5rem' }}>
                                             <TypewriterComponent
                                                 options={{
-                                                    strings: ['Professional Product Designer', 'Web Designer', 'Workflow Management Developer', 'Web UI Developer', 'Front End UI Developer', 'App Designer', 'App UI Developer'],
+                                                    strings: ['Professional Product Designer', 'Product Owner', 'Web Designer', 'Workflow Management Developer', 'Web UI Developer', 'Front End UI Developer', 'App Designer', 'App UI Developer'],
                                                     autoStart: true,
                                                     delay: 30,
                                                     deleteSpeed: 10,
