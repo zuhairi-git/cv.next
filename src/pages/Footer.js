@@ -27,7 +27,7 @@ class App extends React.Component {
                                         <div className='mt-3 fs-5 text-start ps-3 text-white'>
                                             <div className='mb-3'>
                                                 <h4 className='mb-0 text-light'>Ali Al-Zuhairi</h4>
-                                                <div className='footer-text'>Professional Product Designer</div>
+                                                <div className='footer-text'>Expert in Product Design and Product Ownership</div>
                                             </div>
                                             <div className='mb-3'>
                                                 <h4 className='mb-0 text-light'>Links</h4>
