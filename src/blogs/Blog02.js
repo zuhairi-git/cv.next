@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import WOW from 'wowjs';
 import TopNavGeneric from '../pages/TopNavGeneric';
 import Footer from '../pages/Footer';
@@ -19,10 +20,22 @@ class App extends React.Component {
         }).init();
     }
     render() {
-        const dateOfPublish = '2023-03-23'; // Replace with your specific date
+        const dateOfPublish = '2023-03-23'; 
+        const blogTitle = "How to get notifications on iOS with personal focus on?";
+        const blogTagline = "Learn how to manage notifications on iOS with personal focus mode.";
+        const imageUrl = "http://localhost:3000/static/media/iphone-mail-notifications.f82904931615a8a947fc.jpg"; // Replace with the actual URL of your image
 
         return (
             <div>
+                <Helmet>
+                    <meta property="og:title" content={blogTitle} />
+                    <meta property="og:description" content={blogTagline} />
+                    <meta property="og:image" content={imageUrl} />
+                    <meta property="og:image:width" content="1200" />
+                    <meta property="og:image:height" content="630" />
+                    <meta property="og:type" content="article" />
+                    <meta property="og:url" content={window.location.href} />
+                </Helmet>
 
                 <TopNavGeneric />
 
@@ -42,7 +55,7 @@ class App extends React.Component {
 
                 <div className="container-fluid">
                     <div className='blog-width m-5 mx-auto'>
-                        <h2 className='primary-title'>How to get notifications on iOS with personal focus on?</h2>
+                        <h2 className='primary-title'>{blogTitle}</h2>
                         <BlogAuthor datePublished={dateOfPublish} />
                         <ReadingTimeEstimator filePath={content} />
                         <p className='mb-4'>
