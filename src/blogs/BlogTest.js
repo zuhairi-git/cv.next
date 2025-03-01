@@ -36,7 +36,7 @@ const BlogTest = () => {
             <p>{blogTagline}</p>
             <TopNavGeneric />
 
-            <div className="blog01" id="home">
+            <div className="blog-test" id="blog-test">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-sm-12 col-md-6">

@@ -44,7 +44,7 @@ class App extends React.Component {
         return (
             <div>
                 <TopNavGeneric />
-                <div className="blog01" id="home">
+                <div className="blog01" id="blog0">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-sm-12 col-md-6">

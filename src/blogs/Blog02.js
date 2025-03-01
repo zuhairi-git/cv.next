@@ -23,7 +23,7 @@ class App extends React.Component {
         const dateOfPublish = '2023-03-23'; 
         const blogTitle = "How to get notifications on iOS with personal focus on?";
         const blogTagline = "Learn how to manage notifications on iOS with personal focus mode.";
-        const imageUrl = "https://cvlanes.com/static/media/Hero-left.e3406a9b4b4d9162f725.png"; // Ensure this URL is correct and accessible
+        const imageUrl = "https://cvlanes.com/static/media/iphone-mail-notifications.f82904931615a8a947fc.jpg"; // Ensure this URL is correct and accessible
 
         return (
             <div>
@@ -42,7 +42,7 @@ class App extends React.Component {
 
                 <TopNavGeneric />
 
-                <div className="blog01" id="home">
+                <div className="blog01" id="blog02">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-sm-12 col-md-6">
