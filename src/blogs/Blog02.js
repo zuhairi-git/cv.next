@@ -35,6 +35,8 @@ class App extends React.Component {
                     <meta property="og:image:height" content="630" />
                     <meta property="og:type" content="article" />
                     <meta property="og:url" content={window.location.href} />
+                    <meta property="article:published_time" content={dateOfPublish} />
+                    <meta property="article:author" content="Al Al-Zuhairi" />
                 </Helmet>
 
                 <TopNavGeneric />
