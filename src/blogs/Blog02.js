@@ -28,7 +28,7 @@ class App extends React.Component {
         return (
             <div>
                 <Helmet>
-                    <meta property="og:title" content={blogTitle} />
+                    <meta property="og:title" content="How to get notifications on iOS with personal focus on?" />
                     <meta property="og:description" content={blogTagline} />
                     <meta property="og:image" content={imageUrl} />
                     <meta property="og:image:width" content="1200" />
