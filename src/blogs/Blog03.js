@@ -57,7 +57,7 @@ class App extends React.Component {
                             <div className="col-sm-12 col-md-6">
                                 <div className="hero-content">
                                     <div className="hero-text text-start wow fadeInUp" data-wow-delay="0.2s">
-                                        <h1 className='primary-title text-light mt-lg-5 mt-md-3 mt-sm-2 mt-xs-2 text-shadow'>It's blogging time!</h1>
+                                        <h1 className='primary-title text-light mt-lg-4 mt-md-3 mt-sm-2 mt-xs-2 text-shadow'>It's blogging time!</h1>
                                     </div>
                                 </div>
                             </div>
