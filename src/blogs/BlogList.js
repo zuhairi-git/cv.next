@@ -85,6 +85,15 @@ const BlogList = ({ idsToShow, style }) => {
       hidden: false,
       readMoreText: 'Read More',
     },
+    {
+      id: 0,
+      title: 'blog-test',
+      to: '/blogs/blog-test',
+      image: require('../img/blog-writing.jpg'),
+      content: 'Testing.',
+      hidden: false,
+      readMoreText: 'Read More',
+    },
 
   ];
 
