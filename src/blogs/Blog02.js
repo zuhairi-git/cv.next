@@ -22,8 +22,6 @@ class App extends React.Component {
     render() {
         const dateOfPublish = '2023-03-23'; 
         const blogTitle = "How to get notifications on iOS with personal focus on?";
-        const blogTagline = "Learn how to manage notifications on iOS with personal focus mode.";
-        const imageUrl = "https://cvlanes.com/static/media/iphone-mail-notifications.f82904931615a8a947fc.jpg"; // Replace with the actual URL of your image
 
         return (
             <div>
