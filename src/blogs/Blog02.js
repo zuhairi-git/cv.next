@@ -30,9 +30,9 @@ class App extends React.Component {
                 <Helmet>
                     <meta property="og:title" content="How to get notifications on iOS with personal focus on?" />
                     <meta property="og:description" content="Learn how to manage notifications on iOS with personal focus mode." />
-                    <meta property="og:url" content="https://yle.fi/a/74-20146846" />
-                    <meta property="og:image" content="https://images.cdn.yle.fi/image/upload/c_crop,x_10,y_79,w_7980,h_4488/w_1200,ar_1.91,c_fill/q_auto:eco,f_auto,fl_lossy/v1740843449/39-142937867c32927f0635" />
-                    <meta property="og:site_name" content="Yle Uutiset" />
+                    <meta property="og:url" content="https://cvlanes.com" />
+                    <meta property="og:image" content="https://cvlanes.com/static/media/Hero-left.e3406a9b4b4d9162f725.png" />
+                    <meta property="og:site_name" content="CV Lanes" />
                     <meta property="og:type" content="article" />
                     <meta property="article:author" content="Al Al-Zuhairi" />
                 </Helmet>
