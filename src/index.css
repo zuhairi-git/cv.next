@@ -863,7 +863,7 @@ a:focus {
     border: 1px solid #c8e7ea;
 }
 
-.blog, .portfolio, .jobseeking, .collaboration, .blog01 {
+.blog, .portfolio, .jobseeking, .collaboration, .blogGenricBG, .blog01 {
     position: relative;
     width: 100%;
     height: 30vh;
@@ -943,6 +943,10 @@ a:focus {
 
 .blog-width{
     width: 60%;
+}
+
+.blogGenricBG {
+    background-image: url(img/daily-rhythm.jpeg);
 }
 
 .blog01 {
