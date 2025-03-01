@@ -22,17 +22,22 @@ class App extends React.Component {
     render() {
         const dateOfPublish = '2023-03-23'; 
         const blogTitle = "How to get notifications on iOS with personal focus on?";
+        const blogTagline = "Learn how to manage notifications on iOS with personal focus mode.";
+        const imageUrl = "https://cvlanes.com/static/media/Hero-left.e3406a9b4b4d9162f725.png"; // Ensure this URL is correct and accessible
 
         return (
             <div>
                 <Helmet>
-                    <meta property="og:title" content="How to get notifications on iOS with personal focus on?" />
-                    <meta property="og:description" content="Learn how to manage notifications on iOS with personal focus mode." />
-                    <meta property="og:url" content="https://cvlanes.com" />
-                    <meta property="og:image" content="https://cvlanes.com/static/media/Hero-left.e3406a9b4b4d9162f725.png" />
-                    <meta property="og:site_name" content="CV Lanes" />
+                    <meta property="og:title" content={blogTitle} />
+                    <meta property="og:description" content={blogTagline} />
+                    <meta property="og:image" content={imageUrl} />
+                    <meta property="og:image:width" content="1200" />
+                    <meta property="og:image:height" content="630" />
                     <meta property="og:type" content="article" />
+                    <meta property="og:url" content={window.location.href} />
+                    <meta property="article:published_time" content={dateOfPublish} />
                     <meta property="article:author" content="Al Al-Zuhairi" />
+                    <meta property="og:site_name" content="CV Lanes" />
                 </Helmet>
 
                 <TopNavGeneric />
