@@ -866,12 +866,14 @@ a:focus {
 .blog, .portfolio, .jobseeking, .collaboration, .blogGenricBG, .blog01 {
     position: relative;
     width: 100%;
-    height: 30vh;
+    height: 37vh;
     margin-top: -70px;
     margin-bottom: 45px;
-    padding: 120px 0 0 0;
+    padding: 150px 0 0 0;
     overflow: hidden;
-    background-image: url(img/blog-cover.jpeg);
+    background-image: url(img/blog-main.jpg);
+    background-color: rgba(30, 182, 195, 0.8); /* Your specified color */
+    background-blend-mode: multiply;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -946,7 +948,7 @@ a:focus {
 }
 
 .blogGenricBG {
-    background-image: url(img/daily-rhythm.jpeg);
+    background-image: url(img/blog-cover-generic.jpg);
 }
 
 .blog01 {
