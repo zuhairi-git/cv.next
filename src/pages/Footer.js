@@ -4,8 +4,8 @@ import DayOfMylife from '../vector/DayOfMylife.svg';
 class App extends React.Component {
   componentDidMount() {
     // Obfuscate and set the email and phone number dynamically
-    const email = 'zohairi' + '@' + 'live.com';
-    const phoneNumber = '044' + ' ' + '2' + ' ' + '844' + ' ' + '844';
+    const email = 'zohairi@live.com'; // Simplified string
+    const phoneNumber = '0442844844'; // Simplified string (spaces removed for tel link)
 
     // Set the email link
     const emailLink = document.getElementById('email-link');
@@ -16,7 +16,7 @@ class App extends React.Component {
     // Set the phone number link
     const phoneLink = document.getElementById('phone-link');
     if (phoneLink) {
-      phoneLink.href = `tel:${phoneNumber.replace(/\s/g, '')}`;
+      phoneLink.href = `tel:${phoneNumber}`;
     }
   }
 
@@ -97,14 +97,14 @@ class App extends React.Component {
                         <div className="footer-text">Espoo, Suurpelto</div>
                         <div className="footer-text">
                           {/* Call Me Link */}
-                          <a id="phone-link" href="#" className="footer-links">
+                          <a id="phone-link" href="tel:#" className="footer-links d-none">
                             Call Me
                           </a>
                         </div>
                         <div className="footer-text">
                           {/* Email Me Link */}
-                          <a id="email-link" href="#" className="footer-links">
-                            Email Me
+                          <a id="email-link" href="mailto:#" className="footer-links">
+                            Get in touch
                           </a>
                         </div>
                       </div>
